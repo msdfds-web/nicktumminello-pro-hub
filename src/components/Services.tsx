@@ -25,7 +25,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="section-padding bg-brand-light">
+    <section id="services" className="section-padding bg-background">
       <div className="container-tight">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16 animate-fade-in">
@@ -43,14 +43,14 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group bg-background p-8 rounded-lg border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-lg animate-fade-in"
+              className="group p-8 rounded-lg border-2 border-border hover:border-primary transition-all duration-300 hover:shadow-xl animate-fade-in bg-background"
               style={{ animationDelay: `${0.1 * index}s` }}
             >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                <service.icon className="h-6 w-6 text-primary" />
+              <div className="w-14 h-14 rounded-lg bg-foreground flex items-center justify-center mb-5 group-hover:bg-primary transition-colors">
+                <service.icon className="h-7 w-7 text-background" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">{service.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
+              <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>

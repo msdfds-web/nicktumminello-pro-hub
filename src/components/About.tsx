@@ -1,33 +1,33 @@
 import { CheckCircle2 } from "lucide-react";
+import nickImage from "@/assets/nick-tumminello.jpeg";
 
 const About = () => {
   const highlights = [
     "Over 20 years training NFL athletes, pros & everyday clients",
-    "2016 NSCA Personal Trainer of the Year",
-    "2015 Personal Trainer Hall of Fame Inductee",
-    "Editor-in-Chief, NSCA Personal Training Quarterly",
-    "Author of 4 bestselling fitness books",
+    "Specializes in joint-friendly strength training methods",
+    "Expert in golf and tennis performance training",
     "Known as 'The Trainer of Trainers'",
+    "Runs mentorship programs for fitness professionals",
+    "Owner of Performance University International",
   ];
 
   return (
-    <section id="about" className="section-padding bg-background">
+    <section id="about" className="section-padding bg-brand-light">
       <div className="container-tight">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Image Side */}
           <div className="relative animate-fade-in">
-            <div className="aspect-[4/5] bg-muted rounded-lg overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-foreground/10 flex items-center justify-center mb-4">
-                    <span className="text-5xl font-black text-foreground/20">NT</span>
-                  </div>
-                  <p className="text-muted-foreground text-sm">Nick Tumminello</p>
-                </div>
+            <div className="relative">
+              <div className="aspect-[4/5] rounded-lg overflow-hidden shadow-xl">
+                <img 
+                  src={nickImage} 
+                  alt="Nick Tumminello" 
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
+              {/* Accent Box */}
+              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary rounded-lg -z-10" />
             </div>
-            {/* Accent Box */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary rounded-lg -z-10" />
           </div>
 
           {/* Content Side */}
@@ -43,7 +43,9 @@ const About = () => {
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
               Based in Boca Raton, Nick specializes in joint-friendly strength training methods 
-              designed for active adults who want to stay strong, mobile, and injury-free.
+              designed for active adults who want to stay strong, mobile, and injury-free. His 
+              evidence-based approach has made him a trusted resource for both clients and fellow 
+              fitness professionals worldwide.
             </p>
 
             {/* Highlights */}
