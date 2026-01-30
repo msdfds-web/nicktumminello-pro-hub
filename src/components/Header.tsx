@@ -32,7 +32,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 px-6">
           {/* Logo */}
           <a href="/" className="text-xl font-display tracking-wider text-foreground">
-            NICK<span className="text-primary">T</span>
+            NICK <span className="text-primary">TUMMINELLO</span>
           </a>
 
           {/* Desktop Nav */}
