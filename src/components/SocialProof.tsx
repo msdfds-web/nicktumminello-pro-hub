@@ -1,13 +1,6 @@
-import { Trophy, Award, BookOpen, Newspaper, Lightbulb } from "lucide-react";
+import { BookOpen, Newspaper, Lightbulb } from "lucide-react";
 
 const SocialProof = () => {
-  const recognitions = [
-    { icon: Trophy, text: "NSCA Personal Trainer of the Year" },
-    { icon: Trophy, text: "Men's Health: One of America's Top Trainers" },
-    { icon: Award, text: "Personal Trainer Hall of Fame Inductee" },
-    { icon: Award, text: "Editor-in-Chief, NSCA Personal Training Quarterly" },
-  ];
-
   const media = [
     "Men's Health",
     "Men's Fitness", 
@@ -34,20 +27,6 @@ const SocialProof = () => {
           </h2>
         </div>
 
-        {/* Recognitions */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
-          {recognitions.map((item, index) => (
-            <div 
-              key={index}
-              className="flex items-start gap-3 p-5 bg-background/5 rounded-lg border border-background/10 animate-fade-in"
-              style={{ animationDelay: `${0.1 * index}s` }}
-            >
-              <item.icon className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-              <span className="text-background font-medium">{item.text}</span>
-            </div>
-          ))}
-        </div>
-
         {/* Media & Books Grid */}
         <div className="grid md:grid-cols-2 gap-12">
           {/* Media & Publications */}
@@ -63,7 +42,7 @@ const SocialProof = () => {
               {media.map((item, index) => (
                 <span 
                   key={index}
-                  className="px-4 py-2 bg-primary/20 text-primary text-sm font-semibold rounded-full"
+                  className="px-4 py-2 bg-primary text-primary-foreground text-sm font-semibold rounded-full"
                 >
                   {item}
                 </span>
