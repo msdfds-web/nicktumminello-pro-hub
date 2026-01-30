@@ -4,11 +4,11 @@ import nickImage from "@/assets/nick-tumminello.jpeg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-background pt-16 overflow-hidden">
+    <section className="relative flex items-center bg-background pt-20 pb-12 overflow-hidden">
       {/* Red accent bar at top */}
       <div className="absolute top-16 left-0 w-full h-1 bg-primary" />
       
-      <div className="container-tight relative z-10 section-padding">
+      <div className="container-tight relative z-10 px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content Side */}
           <div className="order-2 lg:order-1">
