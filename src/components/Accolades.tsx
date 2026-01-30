@@ -1,30 +1,33 @@
-import { Award, Trophy, Star, BookOpen } from "lucide-react";
+import nscaLogo from "@/assets/nsca-logo.png";
+import mensHealthLogo from "@/assets/mens-health-logo.png";
+import hallOfFameLogo from "@/assets/hall-of-fame-logo.png";
+import ptqLogo from "@/assets/ptq-logo.png";
 
 const Accolades = () => {
   const accolades = [
     {
-      icon: Trophy,
+      logo: nscaLogo,
       title: "NSCA",
       subtitle: "Personal Trainer of the Year",
       year: "2016",
       description: "Awarded by the National Strength & Conditioning Association",
     },
     {
-      icon: Star,
+      logo: mensHealthLogo,
       title: "Men's Health",
       subtitle: "America's Top Trainers",
       year: "",
       description: "Recognized as one of America's best personal trainers",
     },
     {
-      icon: Award,
+      logo: hallOfFameLogo,
       title: "Hall of Fame",
       subtitle: "Personal Trainer Hall of Fame",
       year: "2015",
       description: "Inducted into the Personal Trainer Hall of Fame",
     },
     {
-      icon: BookOpen,
+      logo: ptqLogo,
       title: "NSCA PTQ",
       subtitle: "Editor-in-Chief",
       year: "",
@@ -61,9 +64,13 @@ const Accolades = () => {
                 </div>
               )}
               
-              {/* Icon */}
-              <div className="w-16 h-16 mx-auto rounded-full bg-foreground flex items-center justify-center mb-5 group-hover:bg-primary transition-colors">
-                <item.icon className="h-8 w-8 text-background" />
+              {/* Logo */}
+              <div className="w-20 h-20 mx-auto rounded-full bg-white flex items-center justify-center mb-5 overflow-hidden p-2">
+                <img 
+                  src={item.logo} 
+                  alt={item.title} 
+                  className="w-full h-full object-contain"
+                />
               </div>
               
               {/* Content */}
