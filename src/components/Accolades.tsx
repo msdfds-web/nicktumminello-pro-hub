@@ -39,7 +39,7 @@ const Accolades = () => {
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-primary font-semibold text-sm tracking-wider uppercase">Recognition</span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-foreground mt-3 tracking-wide">
-            INDUSTRY ACCOLADES
+            THE TRAINER OF TRAINERS
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
             Recognized by the most respected organizations in fitness and strength training.
