@@ -33,8 +33,8 @@ const About = () => {
           {/* Content Side */}
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <span className="text-primary font-semibold text-sm tracking-wider uppercase">About</span>
-            <h2 className="text-3xl md:text-4xl font-black text-foreground mt-2 mb-6">
-              Nick Tumminello
+            <h2 className="text-4xl md:text-5xl font-display text-foreground mt-3 mb-6 tracking-wide">
+              NICK TUMMINELLO
             </h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Voted one of America's Top Trainers by Men's Health, Nick Tumminello is the owner of 
@@ -53,7 +53,7 @@ const About = () => {
               {highlights.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground text-sm">{item}</span>
+                  <span className="text-foreground">{item}</span>
                 </li>
               ))}
             </ul>

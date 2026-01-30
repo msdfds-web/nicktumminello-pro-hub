@@ -4,22 +4,22 @@ const Services = () => {
   const services = [
     {
       icon: Dumbbell,
-      title: "Strength Training",
+      title: "STRENGTH TRAINING",
       description: "Build functional strength with joint-friendly methods that protect your body while maximizing results.",
     },
     {
       icon: Target,
-      title: "Golf & Tennis Performance",
+      title: "GOLF & TENNIS",
       description: "Sport-specific training to improve your power, rotation, and endurance on the course or court.",
     },
     {
       icon: Heart,
-      title: "Active Aging",
+      title: "ACTIVE AGING",
       description: "Stay strong, mobile, and independent with training designed for the unique needs of active adults.",
     },
     {
       icon: Users,
-      title: "1-on-1 Coaching",
+      title: "1-ON-1 COACHING",
       description: "Personalized attention and programming tailored to your goals, schedule, and fitness level.",
     },
   ];
@@ -28,10 +28,10 @@ const Services = () => {
     <section id="services" className="section-padding bg-background">
       <div className="container-tight">
         {/* Header */}
-        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+        <div className="text-center mb-16 animate-fade-in">
           <span className="text-primary font-semibold text-sm tracking-wider uppercase">Services</span>
-          <h2 className="text-3xl md:text-4xl font-black text-foreground mt-2">
-            Training That Works For You
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-foreground mt-3 tracking-wide">
+            TRAINING THAT WORKS
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Evidence-based programming designed for real results, not fitness fads.
@@ -39,17 +39,17 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid md:grid-cols-2 gap-6">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group p-8 rounded-lg border-2 border-border hover:border-primary transition-all duration-300 hover:shadow-xl animate-fade-in bg-background"
+              className="group p-8 rounded-xl border-2 border-border hover:border-primary transition-all duration-300 hover:shadow-xl animate-fade-in bg-background"
               style={{ animationDelay: `${0.1 * index}s` }}
             >
-              <div className="w-14 h-14 rounded-lg bg-foreground flex items-center justify-center mb-5 group-hover:bg-primary transition-colors">
-                <service.icon className="h-7 w-7 text-background" />
+              <div className="w-16 h-16 rounded-xl bg-foreground flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                <service.icon className="h-8 w-8 text-background" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
+              <h3 className="text-2xl font-display tracking-wide text-foreground mb-3">{service.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{service.description}</p>
             </div>
           ))}

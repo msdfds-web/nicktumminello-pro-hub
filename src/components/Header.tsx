@@ -31,8 +31,8 @@ const Header = () => {
       <div className="container-tight">
         <div className="flex items-center justify-between h-16 px-6">
           {/* Logo */}
-          <a href="/" className={`text-xl font-black transition-colors ${isScrolled ? 'text-foreground' : 'text-foreground'}`}>
-            Nick<span className="text-primary">T</span>
+          <a href="/" className="text-xl font-display tracking-wider text-foreground">
+            NICK<span className="text-primary">T</span>
           </a>
 
           {/* Desktop Nav */}
@@ -43,9 +43,7 @@ const Header = () => {
                 href={link.href}
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noopener noreferrer" : undefined}
-                className={`text-sm font-medium hover:text-primary transition-colors ${
-                  isScrolled ? 'text-muted-foreground' : 'text-muted-foreground'
-                }`}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
                 {link.label}
               </a>
@@ -57,7 +55,7 @@ const Header = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className={`md:hidden transition-colors ${isScrolled ? 'text-foreground' : 'text-foreground'}`}
+            className="md:hidden text-foreground"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
