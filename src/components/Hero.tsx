@@ -21,14 +21,14 @@ const Hero = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Elite Personal Training in{" "}
-              <span className="text-primary">Boca Raton</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display text-foreground leading-none mb-6 animate-fade-in tracking-wide" style={{ animationDelay: '0.2s' }}>
+              NICK<br />
+              <span className="text-primary">TUMMINELLO</span>
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              Joint-friendly strength training for active adults. Optimize your performance on the golf course, tennis court, and in daily life.
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>
+              Elite personal training in Boca Raton. Joint-friendly strength training for active adults who demand results.
             </p>
 
             {/* CTA Buttons */}
@@ -49,16 +49,16 @@ const Hero = () => {
             {/* Quick Stats */}
             <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <div>
-                <p className="text-3xl md:text-4xl font-black text-primary">20+</p>
-                <p className="text-sm text-muted-foreground mt-1">Years Experience</p>
+                <p className="text-4xl md:text-5xl font-display text-primary">20+</p>
+                <p className="text-sm text-muted-foreground mt-1">Years</p>
               </div>
               <div>
-                <p className="text-3xl md:text-4xl font-black text-primary">4+</p>
-                <p className="text-sm text-muted-foreground mt-1">Bestselling Books</p>
+                <p className="text-4xl md:text-5xl font-display text-primary">4+</p>
+                <p className="text-sm text-muted-foreground mt-1">Books</p>
               </div>
               <div>
-                <p className="text-3xl md:text-4xl font-black text-primary">50+</p>
-                <p className="text-sm text-muted-foreground mt-1">Magazine Features</p>
+                <p className="text-4xl md:text-5xl font-display text-primary">50+</p>
+                <p className="text-sm text-muted-foreground mt-1">Publications</p>
               </div>
             </div>
           </div>

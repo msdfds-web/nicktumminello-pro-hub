@@ -16,7 +16,7 @@ const NTLoop = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Side */}
           <div className="relative animate-fade-in order-2 lg:order-1">
-            <div className="relative bg-background rounded-lg p-8 shadow-2xl">
+            <div className="relative bg-background rounded-xl p-8 shadow-2xl">
               <img 
                 src={ntLoopImage} 
                 alt="NT Loop Resistance Band" 
@@ -31,8 +31,8 @@ const NTLoop = () => {
           {/* Content */}
           <div className="animate-fade-in order-1 lg:order-2" style={{ animationDelay: '0.2s' }}>
             <span className="text-primary font-semibold text-sm tracking-wider uppercase">Shop</span>
-            <h2 className="text-3xl md:text-4xl font-black text-background mt-2 mb-6">
-              NT Loop Resistance Bands
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-background mt-3 mb-6 tracking-wide">
+              NT LOOP
             </h2>
             <p className="text-background/70 mb-8 leading-relaxed text-lg">
               Train smarter with the NT Loop — the resistance band system designed by Nick for 

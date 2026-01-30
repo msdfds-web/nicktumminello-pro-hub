@@ -1,0 +1,81 @@
+import { Award, Trophy, Star, BookOpen } from "lucide-react";
+
+const Accolades = () => {
+  const accolades = [
+    {
+      icon: Trophy,
+      title: "NSCA",
+      subtitle: "Personal Trainer of the Year",
+      year: "2016",
+      description: "Awarded by the National Strength & Conditioning Association",
+    },
+    {
+      icon: Star,
+      title: "Men's Health",
+      subtitle: "America's Top Trainers",
+      year: "",
+      description: "Recognized as one of America's best personal trainers",
+    },
+    {
+      icon: Award,
+      title: "Hall of Fame",
+      subtitle: "Personal Trainer Hall of Fame",
+      year: "2015",
+      description: "Inducted into the Personal Trainer Hall of Fame",
+    },
+    {
+      icon: BookOpen,
+      title: "NSCA PTQ",
+      subtitle: "Editor-in-Chief",
+      year: "",
+      description: "Editor-in-Chief of NSCA Personal Training Quarterly",
+    },
+  ];
+
+  return (
+    <section className="py-20 md:py-28 bg-background border-b border-border">
+      <div className="container-tight px-6 md:px-8">
+        {/* Header */}
+        <div className="text-center mb-16 animate-fade-in">
+          <span className="text-primary font-semibold text-sm tracking-wider uppercase">Recognition</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-foreground mt-3 tracking-wide">
+            INDUSTRY ACCOLADES
+          </h2>
+          <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
+            Recognized by the most respected organizations in fitness and strength training.
+          </p>
+        </div>
+
+        {/* Accolades Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {accolades.map((item, index) => (
+            <div 
+              key={index}
+              className="group relative p-8 rounded-xl border-2 border-border bg-background hover:border-primary/50 transition-all duration-300 animate-fade-in text-center"
+              style={{ animationDelay: `${0.1 * index}s` }}
+            >
+              {/* Year Badge */}
+              {item.year && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary text-primary-foreground text-xs font-bold rounded-full">
+                  {item.year}
+                </div>
+              )}
+              
+              {/* Icon */}
+              <div className="w-16 h-16 mx-auto rounded-full bg-foreground flex items-center justify-center mb-5 group-hover:bg-primary transition-colors">
+                <item.icon className="h-8 w-8 text-background" />
+              </div>
+              
+              {/* Content */}
+              <h3 className="text-2xl font-display tracking-wide text-foreground mb-1">{item.title}</h3>
+              <p className="text-primary font-semibold text-sm mb-3">{item.subtitle}</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Accolades;
