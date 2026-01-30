@@ -22,7 +22,7 @@ const About = () => {
                 <img 
                   src={nickImage} 
                   alt="Nick Tumminello" 
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-[center_20%]"
                 />
               </div>
               {/* Accent Box */}
