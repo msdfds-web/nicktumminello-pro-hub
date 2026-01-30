@@ -4,7 +4,7 @@ import nickImage from "@/assets/nick-tumminello.jpeg";
 
 const Hero = () => {
   return (
-    <section className="relative flex items-center bg-background pt-28 pb-16 overflow-hidden">
+    <section className="relative flex items-center bg-background pt-36 pb-16 overflow-hidden">
       {/* Red accent bar at top */}
       <div className="absolute top-16 left-0 w-full h-1 bg-primary" />
       
