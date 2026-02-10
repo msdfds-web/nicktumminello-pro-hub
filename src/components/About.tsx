@@ -1,6 +1,6 @@
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import nickImage from "@/assets/nick-tumminello-2.jpg";
+import nickImage from "@/assets/nick-about.png";
 
 const About = () => {
   const highlights = [
