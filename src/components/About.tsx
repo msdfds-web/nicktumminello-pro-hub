@@ -1,4 +1,5 @@
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import nickImage from "@/assets/nick-tumminello-2.jpg";
 
 const About = () => {
@@ -57,6 +58,15 @@ const About = () => {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-8">
+              <Button variant="default" size="xl" asChild>
+                <a href="#contact">
+                  Train With Nick
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

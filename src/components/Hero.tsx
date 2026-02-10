@@ -1,8 +1,21 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { ArrowRight } from "lucide-react";
 import nickImage from "@/assets/nick-tumminello.jpeg";
 
 const Hero = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = encodeURIComponent("Training Inquiry");
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}`);
+    window.location.href = `mailto:info@nicktumminello.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section className="relative flex items-center bg-background pt-44 pb-16 overflow-hidden">
       {/* Red accent bar at top */}
@@ -31,20 +44,38 @@ const Hero = () => {
               Elite personal training in Boca Raton. Joint-friendly strength training for active adults who demand results.
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <Button variant="default" size="xl" asChild>
-                <a href="#contact">
-                  Start Training
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
+            {/* Lead Capture Form */}
+            <form onSubmit={handleSubmit} className="space-y-3 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <Input
+                type="text"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                className="bg-background border-border"
+              />
+              <div className="grid grid-cols-2 gap-3">
+                <Input
+                  type="email"
+                  placeholder="Email Address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="bg-background border-border"
+                />
+                <Input
+                  type="tel"
+                  placeholder="Phone Number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="bg-background border-border"
+                />
+              </div>
+              <Button variant="default" size="xl" type="submit" className="w-full">
+                Start Training Today
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="xl" asChild>
-                <a href="#about">
-                  Learn More
-                </a>
-              </Button>
-            </div>
+            </form>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border animate-fade-in" style={{ animationDelay: '0.5s' }}>

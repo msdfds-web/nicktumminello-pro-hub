@@ -1,4 +1,5 @@
-import { Dumbbell, Heart, Target, Users } from "lucide-react";
+import { Dumbbell, Heart, Target, Users, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Services = () => {
   const services = [
@@ -31,7 +32,7 @@ const Services = () => {
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-primary font-semibold text-sm tracking-wider uppercase">Services</span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-foreground mt-3 tracking-wide">
-            TRAINING THAT WORKS
+            Training With Nick
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Evidence-based programming designed for real results, not fitness fads.
@@ -53,6 +54,16 @@ const Services = () => {
               <p className="text-muted-foreground leading-relaxed">{service.description}</p>
             </div>
           ))}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-12 animate-fade-in">
+          <Button variant="default" size="xl" asChild>
+            <a href="#contact">
+              Book a Session
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+          </Button>
         </div>
       </div>
     </section>

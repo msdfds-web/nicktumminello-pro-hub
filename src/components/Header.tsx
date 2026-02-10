@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
@@ -48,9 +47,6 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            <Button variant="default" size="sm" asChild>
-              <a href="#contact">Get Started</a>
-            </Button>
           </nav>
 
           {/* Mobile Menu Toggle */}
@@ -79,9 +75,6 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="default" size="sm" asChild className="mt-2">
-                <a href="#contact" onClick={() => setIsOpen(false)}>Get Started</a>
-              </Button>
             </div>
           </nav>
         )}
