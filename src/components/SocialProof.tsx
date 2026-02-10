@@ -1,5 +1,5 @@
 import { BookOpen, Newspaper, Lightbulb } from "lucide-react";
-import industryBg from "@/assets/industry-bg.jpg";
+import industryBg from "@/assets/industry-bg-new.jpg";
 
 const SocialProof = () => {
   const media = [
