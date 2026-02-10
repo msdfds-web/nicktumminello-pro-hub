@@ -24,10 +24,18 @@ const NTLoop = () => {
                 alt="NT Loop Resistance Band" 
                 className="w-full h-auto"
               />
+              {/* Overlapping small images */}
+              <img 
+                src={ntLoopBlue} 
+                alt="Blue NT Loop" 
+                className="absolute -top-6 -right-6 w-24 h-24 object-cover rounded-lg shadow-lg border-2 border-background"
+              />
+              <img 
+                src={ntLoopBlack} 
+                alt="Black NT Loop" 
+                className="absolute -bottom-6 -left-6 w-24 h-24 object-cover rounded-lg shadow-lg border-2 border-background"
+              />
             </div>
-            {/* Decorative elements */}
-            <div className="absolute -top-4 -left-4 w-20 h-20 border-2 border-primary rounded-lg -z-10" />
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/20 rounded-lg -z-10" />
           </div>
 
           {/* Content */}
