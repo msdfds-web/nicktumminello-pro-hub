@@ -51,7 +51,7 @@ const Publications = () => {
               {books.map((book, index) => (
                 <div 
                   key={index}
-                  className="p-5 bg-background rounded-lg border border-border hover:border-primary/30 transition-all group"
+                  className="p-5 bg-background rounded-lg border-2 border-foreground hover:border-primary transition-all group"
                 >
                   <div className="flex justify-between items-start gap-4">
                     <div>
