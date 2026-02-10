@@ -5,8 +5,8 @@ const Services = () => {
   const services = [
     {
       icon: Dumbbell,
-      title: "STRENGTH TRAINING",
-      description: "Build functional strength with joint-friendly methods that protect your body while maximizing results.",
+      title: "JOINT-FRIENDLY STRENGTH TRAINING",
+      description: "Build functional strength with methods designed to protect your joints while maximizing results.",
     },
     {
       icon: Target,
