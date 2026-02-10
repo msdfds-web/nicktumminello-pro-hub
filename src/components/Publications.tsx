@@ -1,4 +1,5 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Publications = () => {
   const books = [
@@ -95,6 +96,16 @@ const Publications = () => {
               <p className="text-3xl font-display text-primary tracking-wide">50+ FITNESS MAGAZINES</p>
             </div>
           </div>
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-12 animate-fade-in">
+          <Button variant="default" size="xl" asChild>
+            <a href="#contact">
+              Train With Nick
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+          </Button>
         </div>
       </div>
     </section>

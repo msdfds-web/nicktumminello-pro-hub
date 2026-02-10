@@ -1,7 +1,22 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, ArrowRight } from "lucide-react";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = encodeURIComponent("Training Inquiry");
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage: ${message}`);
+    window.location.href = `mailto:info@nicktumminello.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section id="contact" className="section-padding bg-primary">
       <div className="container-tight">
@@ -28,11 +43,45 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* CTA */}
-          <Button variant="dark" size="xl">
-            Get in Touch
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          {/* Contact Form */}
+          <form onSubmit={handleSubmit} className="space-y-4 text-left">
+            <Input
+              type="text"
+              placeholder="Your Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+              className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground"
+            />
+            <div className="grid grid-cols-2 gap-4">
+              <Input
+                type="email"
+                placeholder="Email Address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground"
+              />
+              <Input
+                type="tel"
+                placeholder="Phone Number"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground"
+              />
+            </div>
+            <Textarea
+              placeholder="Tell us about your fitness goals..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              rows={4}
+              className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground resize-none"
+            />
+            <Button variant="dark" size="xl" type="submit" className="w-full">
+              Get in Touch
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </form>
         </div>
       </div>
     </section>

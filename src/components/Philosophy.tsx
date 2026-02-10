@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+
 const Philosophy = () => {
   const principles = [
     {
@@ -53,6 +56,16 @@ const Philosophy = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* CTA */}
+        <div className="mt-12 animate-fade-in">
+          <Button variant="hero" size="xl" asChild>
+            <a href="#contact">
+              Start Your Journey
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+          </Button>
         </div>
       </div>
     </section>
