@@ -24,7 +24,7 @@ const SocialProof = () => {
         <img src={industryBg} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-foreground/85" />
       </div>
-      <div className="container-tight px-6 md:px-8">
+      <div className="container-tight px-6 md:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-primary font-semibold text-sm tracking-wider uppercase">Credentials</span>
