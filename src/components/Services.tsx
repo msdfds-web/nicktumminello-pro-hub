@@ -32,7 +32,7 @@ const Services = () => {
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-primary font-semibold text-sm tracking-wider uppercase">Services</span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-foreground mt-3 tracking-wide">
-            Training With Nick
+            TRAINING WITH NICK
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Evidence-based programming designed for real results, not fitness fads.
