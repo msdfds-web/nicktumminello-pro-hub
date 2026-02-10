@@ -18,8 +18,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-brand-light">
-      <div className="container-tight">
+    <section id="contact" className="relative section-padding bg-primary">
+      {/* Gradient overlay fading to black at bottom */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-foreground pointer-events-none" />
+      <div className="container-tight relative z-10">
         <div className="max-w-2xl mx-auto text-center animate-fade-in">
           {/* Header */}
           <span className="text-primary font-semibold text-sm tracking-wider uppercase">Get Started</span>
