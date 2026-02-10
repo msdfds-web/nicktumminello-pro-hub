@@ -4,12 +4,9 @@ const Footer = () => {
       <div className="container-tight py-12 px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo/Name */}
-          <div>
-            <p className="text-2xl font-display tracking-wider text-background">
-              NICK<span className="text-primary">T</span>
-            </p>
-            <p className="text-background/50 text-sm mt-1">Performance University International</p>
-          </div>
+          <p className="text-2xl font-display tracking-wider text-background">
+            NICK<span className="text-primary">T</span>
+          </p>
 
           {/* Links */}
           <nav className="flex gap-8 text-sm">
