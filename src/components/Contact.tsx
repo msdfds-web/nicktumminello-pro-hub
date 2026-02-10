@@ -53,7 +53,7 @@ const Contact = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="bg-background border-foreground text-foreground placeholder:text-foreground/50"
+              className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground"
             />
             <div className="grid grid-cols-2 gap-4">
               <Input
@@ -62,14 +62,14 @@ const Contact = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="bg-background border-foreground text-foreground placeholder:text-foreground/50"
+                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground"
               />
               <Input
                 type="tel"
                 placeholder="Phone Number"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                className="bg-background border-foreground text-foreground placeholder:text-foreground/50"
+                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground"
               />
             </div>
             <Textarea
@@ -77,9 +77,9 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               rows={4}
-              className="bg-background border-foreground text-foreground placeholder:text-foreground/50 resize-none"
+              className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground resize-none"
             />
-            <Button variant="default" size="xl" type="submit" className="w-full">
+            <Button variant="dark" size="xl" type="submit" className="w-full">
               Get in Touch
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
