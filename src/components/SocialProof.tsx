@@ -1,4 +1,5 @@
 import { BookOpen, Newspaper, Lightbulb } from "lucide-react";
+import industryBg from "@/assets/industry-bg.jpg";
 
 const SocialProof = () => {
   const media = [
@@ -17,7 +18,12 @@ const SocialProof = () => {
   ];
 
   return (
-    <section className="bg-foreground py-20 md:py-28">
+    <section className="relative py-20 md:py-28">
+      {/* Background image with dark overlay */}
+      <div className="absolute inset-0">
+        <img src={industryBg} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-foreground/85" />
+      </div>
       <div className="container-tight px-6 md:px-8">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">

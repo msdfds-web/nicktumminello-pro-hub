@@ -37,7 +37,7 @@ const Publications = () => {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-brand-light text-foreground">
+    <section className="py-20 md:py-28 bg-brand-light">
       <div className="container-tight px-6 md:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Books Section */}
@@ -51,7 +51,7 @@ const Publications = () => {
               {books.map((book, index) => (
                 <div 
                   key={index}
-                  className="p-5 bg-background rounded-lg border-2 border-foreground hover:border-primary transition-all group"
+                  className="p-5 bg-background rounded-lg border border-foreground hover:border-primary transition-all group"
                 >
                   <div className="flex justify-between items-start gap-4">
                     <div>
@@ -59,7 +59,7 @@ const Publications = () => {
                         {book.title}
                       </h3>
                       <p className="text-sm text-primary font-medium mt-1">{book.publisher}</p>
-                      <p className="text-sm text-muted-foreground mt-2">{book.description}</p>
+                      <p className="text-sm text-foreground/70 mt-2">{book.description}</p>
                     </div>
                   </div>
                 </div>
@@ -74,7 +74,7 @@ const Publications = () => {
               50+ PUBLICATIONS
             </h2>
             
-            <p className="text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-foreground/70 mb-8 leading-relaxed">
               Nick's expertise has been featured in over 50 fitness magazines and publications, 
               reaching millions of readers worldwide with evidence-based training information.
             </p>
@@ -83,7 +83,7 @@ const Publications = () => {
               {mediaFeatures.map((media, index) => (
                 <div 
                   key={index}
-                  className="flex items-center gap-3 p-4 bg-background rounded-lg border-2 border-foreground"
+                  className="flex items-center gap-3 p-4 bg-background rounded-lg border border-foreground"
                 >
                   <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
                   <span className="font-medium text-foreground text-sm">{media}</span>
