@@ -37,7 +37,7 @@ const Publications = () => {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-brand-light">
+    <section className="py-20 md:py-28 bg-brand-light text-foreground">
       <div className="container-tight px-6 md:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Books Section */}
