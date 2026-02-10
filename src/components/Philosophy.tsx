@@ -35,7 +35,7 @@ const Philosophy = () => {
             THE APPROACH
           </h2>
           <p className="text-background/60 mt-4 text-lg">
-            20+ years of experience distilled into a training philosophy that works for real people with real lives.
+            20+ years of joint-friendly strength training distilled into a philosophy that works for real people with real lives.
           </p>
         </div>
 

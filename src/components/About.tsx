@@ -1,6 +1,6 @@
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import nickImage from "@/assets/nick-tumminello-2.jpg";
+import nickImage from "@/assets/nick-about.png";
 
 const About = () => {
   const highlights = [
@@ -43,7 +43,7 @@ const About = () => {
               from NFL and NBA athletes to golf and tennis enthusiasts achieve their fitness goals.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Based in Boca Raton, Nick specializes in joint-friendly strength training methods 
+              Based in Boca Raton, Nick's joint-friendly strength training methods are 
               designed for active adults who want to stay strong, mobile, and injury-free. His 
               evidence-based approach has made him a trusted resource for both clients and fellow 
               fitness professionals worldwide.

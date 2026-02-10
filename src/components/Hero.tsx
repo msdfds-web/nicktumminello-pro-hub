@@ -41,7 +41,7 @@ const Hero = () => {
 
             {/* Subheadline */}
             <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>
-              Elite personal training in Boca Raton. Joint-friendly strength training for active adults who demand results.
+              Joint-friendly strength training in Boca Raton for active adults who demand results.
             </p>
 
             {/* Lead Capture Form */}

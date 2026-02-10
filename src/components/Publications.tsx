@@ -37,7 +37,7 @@ const Publications = () => {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-brand-light">
+    <section className="py-20 md:py-28 bg-brand-light text-foreground">
       <div className="container-tight px-6 md:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Books Section */}
@@ -51,7 +51,7 @@ const Publications = () => {
               {books.map((book, index) => (
                 <div 
                   key={index}
-                  className="p-5 bg-background rounded-lg border border-border hover:border-primary/30 transition-all group"
+                  className="p-5 bg-background rounded-lg border-2 border-foreground hover:border-primary transition-all group"
                 >
                   <div className="flex justify-between items-start gap-4">
                     <div>
@@ -83,7 +83,7 @@ const Publications = () => {
               {mediaFeatures.map((media, index) => (
                 <div 
                   key={index}
-                  className="flex items-center gap-3 p-4 bg-background rounded-lg border border-border"
+                  className="flex items-center gap-3 p-4 bg-background rounded-lg border-2 border-foreground"
                 >
                   <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
                   <span className="font-medium text-foreground text-sm">{media}</span>
