@@ -30,12 +30,16 @@ const NTLoop = () => {
                 alt="Blue NT Loop" 
                 className="absolute -top-6 -right-6 w-24 h-24 object-cover rounded-lg shadow-lg border-2 border-background"
               />
-              <img 
-                src={ntLoopBlack} 
-                alt="Black NT Loop" 
-                className="absolute -bottom-6 -left-6 w-24 h-24 object-cover rounded-lg shadow-lg border-2 border-background"
-              />
+              <div className="absolute -bottom-6 -left-6 w-24 h-24 rounded-lg shadow-lg border-2 border-background bg-background overflow-hidden flex items-center justify-center">
+                <img 
+                  src={ntLoopBlack} 
+                  alt="Black NT Loop" 
+                  className="w-[85%] h-auto object-contain"
+                />
+              </div>
             </div>
+            {/* Decorative red border circle */}
+            <div className="absolute -top-4 -left-4 w-20 h-20 border-2 border-primary rounded-lg -z-10" />
           </div>
 
           {/* Content */}
