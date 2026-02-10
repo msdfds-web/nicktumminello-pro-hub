@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import ntLoopImage from "@/assets/nt-loop-band.jpg";
 import ntLoopBlue from "@/assets/nt-loop-blue.png";
-import ntLoopBlack from "@/assets/nt-loop-black.heic";
+import ntLoopBlack from "@/assets/nt-loop-black.png";
 
 const NTLoop = () => {
   const features = [
