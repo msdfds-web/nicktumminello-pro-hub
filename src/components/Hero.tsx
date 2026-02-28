@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUp } from "lucide-react";
 import nickImage from "@/assets/nick-tumminello.jpeg";
 
 const Hero = () => {
@@ -112,7 +112,7 @@ const Hero = () => {
             </div>
             {/* Caption */}
             <div className="mt-8 text-center animate-fade-in" style={{ animationDelay: '0.5s' }}>
-              <ArrowRight className="mx-auto h-5 w-5 text-primary rotate-[-90deg] animate-bounce mb-2" />
+              <ArrowUp className="mx-auto h-6 w-6 text-primary animate-bounce mb-2" />
               <p className="text-sm text-muted-foreground italic leading-relaxed">
                 Training the NFL's Fittest Man and Superbowl Champion,<br />
                 <span className="text-foreground font-semibold">Steve Weatherford, NY Giants.</span>
