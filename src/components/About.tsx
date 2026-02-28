@@ -1,6 +1,6 @@
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import nickImage from "@/assets/nick-about.png";
+
 
 const About = () => {
   const highlights = [
@@ -15,24 +15,8 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-brand-light">
       <div className="container-tight">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Image Side */}
-          <div className="relative animate-fade-in">
-            <div className="relative">
-              <div className="aspect-[4/5] rounded-lg overflow-hidden shadow-xl">
-                <img 
-                  src={nickImage} 
-                  alt="Nick Tumminello" 
-                  className="w-full h-full object-cover object-[center_20%]"
-                />
-              </div>
-              {/* Accent Box */}
-              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary rounded-lg -z-10" />
-            </div>
-          </div>
-
-          {/* Content Side */}
-          <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <div className="max-w-2xl">
+          <div className="animate-fade-in">
             <span className="text-primary font-semibold text-sm tracking-wider uppercase">About</span>
             <h2 className="text-4xl md:text-5xl font-display text-foreground mt-3 mb-6 tracking-wide">
               NICK TUMMINELLO
