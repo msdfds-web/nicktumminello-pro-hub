@@ -100,9 +100,9 @@ Joint-Friendly Strength Training and Golf Fitness
               {/* Main Image */}
               <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  src={nickImage}
+
                   alt="Nick Tumminello - Personal Trainer"
-                  className="w-full h-auto object-cover" />
+                  className="w-full h-auto object-cover" src="/lovable-uploads/85821f3e-2f6f-4dac-ae8b-8e9756682599.png" />
 
               </div>
               {/* Red accent block */}
