@@ -1,5 +1,9 @@
 import { Dumbbell, Heart, Target, Users, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import bodybuildingLogo from "@/assets/bodybuilding-com-logo.png";
+import nyTimesLogo from "@/assets/ny-times-logo.jpg";
+import golfDigestLogo from "@/assets/golf-digest-logo.png";
+import yahooSportsLogo from "@/assets/yahoo-sports-logo.png";
 
 const Services = () => {
   const services = [
@@ -37,6 +41,24 @@ const Services = () => {
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Evidence-based programming designed for real results, not fitness fads.
           </p>
+        </div>
+
+        {/* Featured In */}
+        <div className="mb-14 animate-fade-in">
+          <p className="text-center text-muted-foreground text-sm font-semibold tracking-wider uppercase mb-6">Featured In</p>
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+            {[
+              { src: bodybuildingLogo, alt: "Bodybuilding.com" },
+              { src: nyTimesLogo, alt: "NY Times" },
+              { src: golfDigestLogo, alt: "Golf Digest" },
+              { src: yahooSportsLogo, alt: "Yahoo Sports" },
+            ].map((item, i) => (
+              <div key={i} className="h-10 md:h-12 grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                <img src={item.src} alt={item.alt} className="h-full w-auto object-contain" />
+              </div>
+            ))}
+            <span className="text-muted-foreground font-display text-lg tracking-wide">& more</span>
+          </div>
         </div>
 
         {/* Services Grid */}
