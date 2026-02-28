@@ -110,6 +110,14 @@ const Hero = () => {
               {/* Black accent block */}
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-foreground rounded-lg -z-0" />
             </div>
+            {/* Caption */}
+            <div className="mt-8 text-center animate-fade-in" style={{ animationDelay: '0.5s' }}>
+              <ArrowRight className="mx-auto h-5 w-5 text-primary rotate-[-90deg] animate-bounce mb-2" />
+              <p className="text-sm text-muted-foreground italic leading-relaxed">
+                Training the NFL's Fittest Man and Superbowl Champion,<br />
+                <span className="text-foreground font-semibold">Steve Weatherford, NY Giants.</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
