@@ -56,27 +56,29 @@ const About = () => {
           </div>
 
           {/* Images Side - Right */}
-          <div className="animate-fade-in grid grid-cols-2 gap-4" style={{ animationDelay: '0.2s' }}>
-            <div className="col-span-2 rounded-2xl overflow-hidden shadow-lg">
+          <div className="animate-fade-in flex flex-col gap-5" style={{ animationDelay: '0.2s' }}>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
               <img 
                 src={nickSeminar} 
                 alt="Nick Tumminello teaching at a fitness seminar" 
-                className="w-full h-64 object-cover"
+                className="w-full object-contain"
               />
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img 
-                src={nickBooks} 
-                alt="Nick Tumminello with his published books" 
-                className="w-full h-52 object-cover object-top"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img 
-                src={nickTraining} 
-                alt="Nick Tumminello training a client" 
-                className="w-full h-52 object-cover"
-              />
+            <div className="grid grid-cols-2 gap-5">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src={nickBooks} 
+                  alt="Nick Tumminello with his published books" 
+                  className="w-full object-contain"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src={nickTraining} 
+                  alt="Nick Tumminello training a client" 
+                  className="w-full object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
