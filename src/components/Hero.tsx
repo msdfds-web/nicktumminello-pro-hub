@@ -109,6 +109,13 @@ const Hero = () => {
           {/* Image Side */}
           <div className="order-1 lg:order-2 relative animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <div className="relative">
+              {/* Caption with arrow */}
+              <div className="absolute -left-4 lg:-left-16 top-1/2 -translate-y-1/2 z-20 max-w-[180px] text-right animate-fade-in" style={{ animationDelay: "0.6s" }}>
+                <p className="text-sm font-semibold text-foreground leading-snug italic">
+                  "Training the NFL's Fittest Man and Superbowl Champion, Steve Weatherford, NY Giants."
+                </p>
+                <ArrowRight className="ml-auto mt-2 h-6 w-6 text-primary" />
+              </div>
               {/* Main Image */}
               <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl">
                 <img
