@@ -28,13 +28,13 @@ const Hero = () => {
             {/* Credentials Badge */}
             <div className="inline-flex items-center gap-2 mb-6 animate-fade-in text-secondary-foreground" style={{ animationDelay: '0.1s' }}>
               <span className="h-px w-8 bg-secondary-foreground" />
-              <span className="font-semibold tracking-wider uppercase text-base text-secondary-foreground">VOTED ONE OF AMERICA’S BEST TRAINERS BY MEN’S HEALTH
+              <span className="font-semibold tracking-wider uppercase text-secondary-foreground text-lg">VOTED ONE OF AMERICA’S BEST TRAINERS BY MEN’S HEALTH
 
               </span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display text-foreground leading-none mb-6 animate-fade-in tracking-wide" style={{ animationDelay: '0.2s' }}>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display leading-none mb-6 animate-fade-in tracking-wide text-primary" style={{ animationDelay: '0.2s' }}>
               NICK<br />
               <span className="text-primary">TUMMINELLO</span>
             </h1>
