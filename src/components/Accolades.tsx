@@ -1,3 +1,6 @@
+import steveImg from "@/assets/steve-weatherford.png";
+import quinnImg from "@/assets/quinn-sypniewski.webp";
+
 const Accolades = () => {
   const testimonials = [
     {
@@ -5,14 +8,14 @@ const Accolades = () => {
         "Nick Tumminello's expertise in exercise science is second to none. I've trained all over the country and found no one better. His methodology in regard to building a bigger, faster, stronger body is a formula for success.",
       name: "Steve Weatherford",
       title: "Former Punter For The NY Giants (2011-2014)",
-      avatar: "https://i.pravatar.cc/80?img=11",
+      avatar: steveImg,
     },
     {
       quote:
         "Working with Nick Tumminello allowed me to see training in a whole new light. The way he was able to combine functional movement, flexibility, and strength training was like nothing I'd ever done before. Not only was I completely gassed at the end, but I found myself wanting more!",
       name: "Quinn Sypniewski",
       title: "Former Tight End for the Baltimore Ravens (2006-2009)",
-      avatar: "https://i.pravatar.cc/80?img=12",
+      avatar: quinnImg,
     },
   ];
 
