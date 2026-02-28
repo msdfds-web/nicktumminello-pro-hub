@@ -29,7 +29,7 @@ const Hero = () => {
             <div className="inline-flex items-center gap-2 mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
               <span className="h-px w-8 bg-secondary-foreground" />
               <span className="font-semibold text-sm tracking-wider uppercase text-secondary-foreground">
-                VOTED ONE OF AMERICA'S BEST TRAINERS BY MEN'S HEALTH
+                VOTED ONE OF AMERICA’S BEST TRAINERS BY MEN’S HEALTH
               </span>
             </div>
 
@@ -48,7 +48,7 @@ const Hero = () => {
               className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in leading-relaxed"
               style={{ animationDelay: "0.3s" }}
             >
-              Boca Raton's Best Personal Trainer for Joint-Friendly Strength Training and Golf Fitness
+              Boca Raton’s Best Personal Trainer for Joint-Friendly Strength Training and Golf Fitness
             </p>
 
             {/* Lead Capture Form */}
@@ -80,7 +80,6 @@ const Hero = () => {
                   className="bg-background border-border"
                 />
               </div>
-
               <Button variant="default" size="xl" type="submit" className="w-full">
                 Start Training Today
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -118,45 +117,10 @@ const Hero = () => {
                   src="/lovable-uploads/85821f3e-2f6f-4dac-ae8b-8e9756682599.png"
                 />
               </div>
-
               {/* Red accent block */}
               <div className="absolute -bottom-4 -right-4 w-full h-full bg-primary rounded-lg -z-0" />
               {/* Black accent block */}
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-foreground rounded-lg -z-0" />
-
-              {/* Steve Weatherford Caption with Arrow */}
-              <div className="absolute -bottom-12 left-0 right-0 z-20 flex items-center gap-3 px-2">
-                {/* Curved arrow SVG pointing up-right toward the image */}
-                <svg
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 text-primary"
-                  style={{ transform: "scaleX(-1)" }}
-                >
-                  <path
-                    d="M8 40 C10 20, 28 10, 40 8"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    fill="none"
-                  />
-                  <path
-                    d="M34 4 L40 8 L36 14"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                  />
-                </svg>
-                <p className="text-sm text-muted-foreground italic leading-snug">
-                  Training the NFL's Fittest Man and Super Bowl Champion,{" "}
-                  <span className="font-semibold text-foreground not-italic">Steve Weatherford</span>, NY Giants.
-                </p>
-              </div>
             </div>
           </div>
         </div>
