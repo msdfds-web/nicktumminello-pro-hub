@@ -1,21 +1,24 @@
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import nickSeminar from "@/assets/nick-seminar.jpeg";
+import nickBooks from "@/assets/nick-books.jpeg";
+import nickTraining from "@/assets/nick-training.png";
 
 const About = () => {
   const highlights = [
-    "Over 20 years training NFL athletes, pros & everyday clients",
     "Specializes in joint-friendly strength training methods",
-    "Expert in golf and tennis performance training",
-    "Known as 'The Trainer of Trainers'",
-    "Runs mentorship programs for fitness professionals",
-    "Owner of Performance University International",
+    "Expert in golf fitness",
+    "Written Four Books",
+    "Taught at Fitness Conferences in 20+ Countries",
+    "Featured in 100+ major websites and magazines",
+    "Winner of the NSCA Personal Trainer of the Year Award",
   ];
 
   return (
     <section id="about" className="section-padding bg-brand-light">
       <div className="container-tight">
-        <div className="max-w-2xl">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+          {/* Content Side - Left */}
           <div className="animate-fade-in">
             <span className="text-primary font-semibold text-sm tracking-wider uppercase">About</span>
             <h2 className="text-4xl md:text-5xl font-display text-foreground mt-3 mb-6 tracking-wide">
@@ -33,11 +36,10 @@ const About = () => {
               fitness professionals worldwide.
             </p>
 
-            {/* Highlights */}
             <ul className="space-y-3">
               {highlights.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-primary font-bold text-lg leading-5 mt-0.5">●</span>
                   <span className="text-foreground">{item}</span>
                 </li>
               ))}
@@ -50,6 +52,31 @@ const About = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
+            </div>
+          </div>
+
+          {/* Images Side - Right */}
+          <div className="animate-fade-in grid grid-cols-2 gap-4" style={{ animationDelay: '0.2s' }}>
+            <div className="col-span-2 rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src={nickSeminar} 
+                alt="Nick Tumminello teaching at a fitness seminar" 
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src={nickBooks} 
+                alt="Nick Tumminello with his published books" 
+                className="w-full h-52 object-cover object-top"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src={nickTraining} 
+                alt="Nick Tumminello training a client" 
+                className="w-full h-52 object-cover"
+              />
             </div>
           </div>
         </div>
