@@ -15,6 +15,12 @@ const Footer = () => {
             <a href="https://ntloop.com" target="_blank" rel="noopener noreferrer" className="text-background/60 hover:text-primary transition-colors">NT Loop</a>
             <a href="#contact" className="text-background/60 hover:text-primary transition-colors">Contact</a>
           </nav>
+
+          {/* Contact Info */}
+          <div className="flex flex-col md:flex-row gap-4 text-sm">
+            <a href="tel:5615011397" className="text-background/60 hover:text-primary transition-colors">561-501-1397</a>
+            <a href="mailto:info@nicktumminello.com" className="text-background/60 hover:text-primary transition-colors">info@nicktumminello.com</a>
+          </div>
         </div>
 
         {/* Copyright */}
