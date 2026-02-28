@@ -52,8 +52,8 @@ const Hero = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="bg-background border-border"
-              />
+                className="bg-background border-border" />
+
               <div className="grid grid-cols-2 gap-3">
                 <Input
                   type="email"
@@ -61,15 +61,15 @@ const Hero = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="bg-background border-border"
-                />
+                  className="bg-background border-border" />
+
                 <Input
                   type="tel"
                   placeholder="Phone Number"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  className="bg-background border-border"
-                />
+                  className="bg-background border-border" />
+
               </div>
               <Button variant="default" size="xl" type="submit" className="w-full">
                 Start Training Today
@@ -99,11 +99,11 @@ const Hero = () => {
             <div className="relative">
               {/* Main Image */}
               <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl">
-                <img 
-                  src={nickImage} 
-                  alt="Nick Tumminello - Personal Trainer" 
-                  className="w-full h-auto object-cover"
-                />
+                <img
+
+                  alt="Nick Tumminello - Personal Trainer"
+                  className="w-full h-auto object-cover" src="/lovable-uploads/23987974-c82d-4976-9642-5b0a1cdb59db.png" />
+
               </div>
               {/* Red accent block */}
               <div className="absolute -bottom-4 -right-4 w-full h-full bg-primary rounded-lg -z-0" />
@@ -121,8 +121,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Hero;
