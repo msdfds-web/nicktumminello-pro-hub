@@ -26,10 +26,10 @@ const Hero = () => {
           {/* Content Side */}
           <div className="order-2 lg:order-1">
             {/* Credentials Badge */}
-            <div className="inline-flex items-center gap-2 mb-6 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <span className="h-px w-8 bg-primary" />
-              <span className="text-primary font-semibold text-sm tracking-wider uppercase">
-                NSCA Personal Trainer of the Year
+            <div className="inline-flex items-center gap-2 mb-6 animate-fade-in text-secondary-foreground" style={{ animationDelay: '0.1s' }}>
+              <span className="h-px w-8 bg-secondary-foreground" />
+              <span className="font-semibold tracking-wider uppercase text-base text-secondary-foreground">VOTED ONE OF AMERICA’S BEST TRAINERS BY MEN’S HEALTH
+
               </span>
             </div>
 
