@@ -83,6 +83,12 @@ const Accolades = () => {
                 allowFullScreen
               />
             </div>
+            <a
+              href="#about"
+              className="inline-flex items-center justify-center mt-6 px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold tracking-wide hover:opacity-90 transition-opacity"
+            >
+              Learn More About Nick
+            </a>
           </div>
         </div>
       </div>
