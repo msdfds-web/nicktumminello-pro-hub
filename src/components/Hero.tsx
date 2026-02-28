@@ -27,21 +27,21 @@ const Hero = () => {
           <div className="order-2 lg:order-1">
             {/* Credentials Badge */}
             <div className="inline-flex items-center gap-2 mb-6 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <span className="h-px w-8 bg-primary" />
-              <span className="text-primary font-semibold text-sm tracking-wider uppercase">
-                NSCA Personal Trainer of the Year
+              <span className="h-px w-8 bg-secondary-foreground" />
+              <span className="font-semibold text-sm tracking-wider uppercase text-secondary-foreground">VOTED ONE OF AMERICA’S BEST TRAINERS BY MEN’S HEALTH
+
               </span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display text-foreground leading-none mb-6 animate-fade-in tracking-wide" style={{ animationDelay: '0.2s' }}>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display leading-none mb-6 animate-fade-in tracking-wide text-primary" style={{ animationDelay: '0.2s' }}>
               NICK<br />
               <span className="text-primary">TUMMINELLO</span>
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>
-              Joint-friendly strength training in Boca Raton for active adults who demand results.
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>Boca Raton’s Best Personal Trainer for
+Joint-Friendly Strength Training and Golf Fitness
             </p>
 
             {/* Lead Capture Form */}
@@ -52,8 +52,8 @@ const Hero = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="bg-background border-border"
-              />
+                className="bg-background border-border" />
+
               <div className="grid grid-cols-2 gap-3">
                 <Input
                   type="email"
@@ -61,15 +61,15 @@ const Hero = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="bg-background border-border"
-                />
+                  className="bg-background border-border" />
+
                 <Input
                   type="tel"
                   placeholder="Phone Number"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  className="bg-background border-border"
-                />
+                  className="bg-background border-border" />
+
               </div>
               <Button variant="default" size="xl" type="submit" className="w-full">
                 Start Training Today
@@ -99,11 +99,11 @@ const Hero = () => {
             <div className="relative">
               {/* Main Image */}
               <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl">
-                <img 
-                  src={nickImage} 
-                  alt="Nick Tumminello - Personal Trainer" 
-                  className="w-full h-auto object-cover"
-                />
+                <img
+                  src={nickImage}
+                  alt="Nick Tumminello - Personal Trainer"
+                  className="w-full h-auto object-cover" />
+
               </div>
               {/* Red accent block */}
               <div className="absolute -bottom-4 -right-4 w-full h-full bg-primary rounded-lg -z-0" />
@@ -113,8 +113,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Hero;
