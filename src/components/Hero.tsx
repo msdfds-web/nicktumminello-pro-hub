@@ -40,8 +40,8 @@ const Hero = () => {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>
-              Joint-friendly strength training in Boca Raton for active adults who demand results.
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>Boca Raton’s Best Personal Trainer for
+Joint-Friendly Strength Training and Golf Fitness
             </p>
 
             {/* Lead Capture Form */}
