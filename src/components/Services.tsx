@@ -48,12 +48,12 @@ const Services = () => {
           <p className="text-center text-muted-foreground text-sm font-semibold tracking-wider uppercase mb-6">Featured In</p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
             {[
-              { src: bodybuildingLogo, alt: "Bodybuilding.com" },
-              { src: nyTimesLogo, alt: "NY Times" },
-              { src: golfDigestLogo, alt: "Golf Digest" },
-              { src: yahooSportsLogo, alt: "Yahoo Sports" },
+              { src: bodybuildingLogo, alt: "Bodybuilding.com", className: "h-10 md:h-12" },
+              { src: nyTimesLogo, alt: "NY Times", className: "h-14 md:h-16" },
+              { src: golfDigestLogo, alt: "Golf Digest", className: "h-14 md:h-16" },
+              { src: yahooSportsLogo, alt: "Yahoo Sports", className: "h-10 md:h-12" },
             ].map((item, i) => (
-              <div key={i} className="h-10 md:h-12 grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+              <div key={i} className={`${item.className} grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300`}>
                 <img src={item.src} alt={item.alt} className="h-full w-auto object-contain" />
               </div>
             ))}
