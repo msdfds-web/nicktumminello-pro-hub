@@ -1,88 +1,90 @@
-import nscaLogo from "@/assets/nsca-logo.png";
-import mensHealthLogo from "@/assets/mens-health-logo.png";
-import hallOfFameLogo from "@/assets/hall-of-fame-logo.png";
-import ptqLogo from "@/assets/ptq-logo.png";
-
 const Accolades = () => {
-  const accolades = [
-  {
-    logo: nscaLogo,
-    title: "NSCA",
-    subtitle: "Personal Trainer of the Year",
-    year: "2016",
-    description: "Awarded by the National Strength & Conditioning Association"
-  },
-  {
-    logo: mensHealthLogo,
-    title: "Men's Health",
-    subtitle: "America's Top Trainers",
-    year: "",
-    description: "Recognized as one of America's best personal trainers"
-  },
-  {
-    logo: hallOfFameLogo,
-    title: "Hall of Fame",
-    subtitle: "Personal Trainer Hall of Fame",
-    year: "2015",
-    description: "Inducted into the Personal Trainer Hall of Fame"
-  },
-  {
-    logo: ptqLogo,
-    title: "NSCA PTQ",
-    subtitle: "Editor-in-Chief",
-    year: "",
-    description: "Editor-in-Chief of NSCA Personal Training Quarterly"
-  }];
-
+  const testimonials = [
+    {
+      quote:
+        "Nick Tumminello's expertise in exercise science is second to none. I've trained all over the country and found no one better. His methodology in regard to building a bigger, faster, stronger body is a formula for success.",
+      name: "Steve Weatherford",
+      title: "Former Punter For The NY Giants (2011-2014)",
+      avatar: "https://i.pravatar.cc/80?img=11",
+    },
+    {
+      quote:
+        "Working with Nick Tumminello allowed me to see training in a whole new light. The way he was able to combine functional movement, flexibility, and strength training was like nothing I'd ever done before. Not only was I completely gassed at the end, but I found myself wanting more!",
+      name: "Quinn Sypniewski",
+      title: "Former Tight End for the Baltimore Ravens (2006-2009)",
+      avatar: "https://i.pravatar.cc/80?img=12",
+    },
+  ];
 
   return (
     <section className="py-20 md:py-28 bg-background border-b border-border">
       <div className="container-tight px-6 md:px-8">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <span className="text-primary font-semibold text-sm tracking-wider uppercase">CREDIBILITY</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-foreground mt-3 tracking-wide">TRAIN LIKE THE PROS
-
+          <span className="text-primary font-semibold text-sm tracking-wider uppercase">
+            CREDIBILITY
+          </span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-foreground mt-3 tracking-wide">
+            TRAIN LIKE THE PROS
           </h2>
-          <p className="text-muted-foreground mt-4 max-w-xl mx-auto">Nick has trained Super Bowl Champion Steve Weatherford, pro golfers, and elite athletes across the NFL, MLB, and beyond.
-
+          <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
+            Nick has trained Super Bowl Champion Steve Weatherford, pro golfers,
+            and elite athletes across the NFL, MLB, and beyond.
           </p>
         </div>
 
-        {/* Accolades Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {accolades.map((item, index) =>
-          <div
-            key={index}
-            className="group relative p-8 rounded-xl border-2 border-border bg-background hover:border-primary/50 transition-all duration-300 animate-fade-in text-center"
-            style={{ animationDelay: `${0.1 * index}s` }}>
-
-              {/* Year Badge */}
-              {item.year &&
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary text-primary-foreground text-xs font-bold rounded-full">
-                  {item.year}
+        {/* Two-column layout */}
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
+          {/* Left: Testimonials */}
+          <div className="flex flex-col gap-6">
+            {testimonials.map((t, i) => (
+              <div
+                key={i}
+                className="p-8 rounded-xl border border-border bg-card animate-fade-in"
+                style={{ animationDelay: `${0.1 * i}s` }}
+              >
+                <p className="text-foreground text-base md:text-lg leading-relaxed mb-6">
+                  "{t.quote}"
+                </p>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
+                    <img
+                      src={t.avatar}
+                      alt={t.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-foreground font-semibold text-lg">
+                      {t.name}
+                    </p>
+                    <p className="text-muted-foreground text-sm">{t.title}</p>
+                  </div>
                 </div>
-            }
-              
-              {/* Logo */}
-              <div className="w-20 h-20 mx-auto rounded-full bg-white flex items-center justify-center mb-5 overflow-hidden p-2">
-                <img
-                src={item.logo}
-                alt={item.title}
-                className="w-full h-full object-contain" />
-
               </div>
-              
-              {/* Content */}
-              <h3 className="text-2xl font-display tracking-wide text-foreground mb-1">{item.title}</h3>
-              <p className="text-primary font-semibold text-sm mb-3">{item.subtitle}</p>
-              <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
+            ))}
+          </div>
+
+          {/* Right: YouTube Video */}
+          <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <h3 className="text-xl md:text-2xl font-display text-foreground mb-4 tracking-wide">
+              Watch Coach Nick Training the NFL's Fittest Man{" "}
+              <span className="text-primary">(1.9 Million Views)</span>
+            </h3>
+            <div className="relative w-full rounded-xl overflow-hidden border border-border" style={{ paddingBottom: "56.25%" }}>
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/o3dCzUT0oIY?list=PL8VhzNx21yXlUdZMeg738MMAcpfSEG4r0"
+                title="Coach Nick training the NFL's Fittest Man"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
-          )}
+          </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default Accolades;
