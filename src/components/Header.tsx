@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,6 +48,10 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
+            <a href="tel:5615011397" className="flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors">
+              <Phone className="h-3.5 w-3.5" />
+              561-501-1397
+            </a>
           </nav>
 
           {/* Mobile Menu Toggle */}
