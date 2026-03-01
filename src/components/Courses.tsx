@@ -42,17 +42,17 @@ const Courses = () => {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-foreground">
+    <section className="py-20 md:py-28 bg-background">
       <div className="container-tight px-6 md:px-8">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-primary font-semibold text-sm tracking-wider uppercase">
             Education
           </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-background mt-3 tracking-wide">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-foreground mt-3 tracking-wide">
             COURSES
           </h2>
-          <p className="text-background/60 mt-4 text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground mt-4 text-lg max-w-2xl mx-auto">
             Digital courses designed to level up your training knowledge and coaching skills.
           </p>
         </div>
@@ -62,27 +62,27 @@ const Courses = () => {
           {courses.map((course, index) => (
             <div
               key={index}
-              className="group border border-background/10 rounded-xl p-8 hover:border-primary/40 transition-all duration-300 animate-fade-in flex flex-col"
+              className="group border border-foreground/10 rounded-xl p-8 hover:border-primary/40 transition-all duration-300 animate-fade-in flex flex-col"
               style={{ animationDelay: `${0.15 * index}s` }}
             >
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
                 <GraduationCap className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-display tracking-wide text-background mb-3">
+              <h3 className="text-xl font-display tracking-wide text-foreground mb-3">
                 {course.title}
               </h3>
-              <p className="text-background/60 text-sm mb-6 leading-relaxed">
+              <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
                 {course.description}
               </p>
               <ul className="space-y-2 mb-8 flex-grow">
                 {course.highlights.map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" />
-                    <span className="text-background/70">{item}</span>
+                    <span className="text-foreground/70">{item}</span>
                   </li>
                 ))}
               </ul>
-              <Button variant="outline" size="lg" asChild className="w-full border-background/20 text-background hover:bg-primary hover:text-primary-foreground hover:border-primary">
+              <Button variant="outline" size="lg" asChild className="w-full border-foreground/20 text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary">
                 <a href={course.link} target="_blank" rel="noopener noreferrer">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
