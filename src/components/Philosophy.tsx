@@ -5,22 +5,22 @@ const Philosophy = () => {
   const principles = [
   {
     number: "01",
-    title: "Evidence-Based Training",
+    title: "Joint-Friendly Exercises",
     description: "Every exercise and program is backed by scientific research, not fitness trends or fads."
   },
   {
     number: "02",
-    title: "Joint-Friendly Methods",
+    title: "Barbell-Free Workouts",
     description: "Training should make you feel better, not break you down. Smart exercise selection protects your body."
   },
   {
     number: "03",
-    title: "Individual Programming",
+    title: "Science-Based Training",
     description: "No cookie-cutter programs. Every client gets training tailored to their goals, limitations, and lifestyle."
   },
   {
     number: "04",
-    title: "Sustainable Results",
+    title: "Strength for Life",
     description: "Build strength and fitness that lasts for years, not just weeks. Long-term progress over quick fixes."
   }];
 
