@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import nickSeminar from "@/assets/nick-seminar.jpeg";
 import nickBooks from "@/assets/nick-books.jpeg";
 import nickTraining from "@/assets/nick-training.png";
+import nickChestPress from "@/assets/nick-chest-press.jpg";
 
 const About = () => {
   const highlights = [
@@ -72,12 +73,21 @@ const About = () => {
                   className="w-full object-contain"
                 />
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img 
-                  src={nickTraining} 
-                  alt="Nick Tumminello training a client" 
-                  className="w-full object-contain"
-                />
+              <div className="flex flex-col gap-5">
+                <div className="rounded-2xl overflow-hidden shadow-lg">
+                  <img 
+                    src={nickTraining} 
+                    alt="Nick Tumminello training a client" 
+                    className="w-full object-contain"
+                  />
+                </div>
+                <div className="rounded-2xl overflow-hidden shadow-lg">
+                  <img 
+                    src={nickChestPress} 
+                    alt="Nick Tumminello spotting incline chest press" 
+                    className="w-full object-contain"
+                  />
+                </div>
               </div>
             </div>
           </div>
