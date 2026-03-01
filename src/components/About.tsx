@@ -70,7 +70,7 @@ const About = () => {
                 <img 
                   src={nickBooks} 
                   alt="Nick Tumminello with his published books" 
-                  className="w-full object-contain"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="flex flex-col gap-5">
