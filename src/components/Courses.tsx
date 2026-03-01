@@ -83,7 +83,7 @@ const Courses = () => {
                 ))}
               </ul>
               <Button variant="outline" size="lg" asChild className="w-full border-foreground/20 text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary">
-                <a href={course.link} target="_blank" rel="noopener noreferrer">
+                <a href="#contact">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
