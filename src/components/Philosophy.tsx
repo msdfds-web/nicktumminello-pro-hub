@@ -1,25 +1,25 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ShieldCheck, Dumbbell, FlaskConical, HeartPulse } from "lucide-react";
 
 const Philosophy = () => {
   const principles = [
   {
-    number: "01",
+    icon: ShieldCheck,
     title: "Joint-Friendly Exercises",
     description: "I specialize in building strength around aches, past injuries, and sensitive joints—so you can get fitter without flaring things up."
   },
   {
-    number: "02",
+    icon: Dumbbell,
     title: "Barbell-Free Workouts",
     description: "I prioritize smart alternatives to traditional barbell lifts to help you get strong without excessive joint stress."
   },
   {
-    number: "03",
+    icon: FlaskConical,
     title: "Science-Based Training",
     description: "Every program is guided by proven principles and research—not trends or fads."
   },
   {
-    number: "04",
+    icon: HeartPulse,
     title: "Strength for Life",
     description: "We train to improve how you move, feel, and function—so you stay active, capable, and confident for years to come."
   }];
@@ -48,7 +48,7 @@ const Philosophy = () => {
             style={{ animationDelay: `${0.1 * index}s` }}>
 
               <div className="flex-shrink-0">
-                <span className="text-5xl font-display text-primary/30">{item.number}</span>
+                <item.icon className="h-10 w-10 text-primary/60" strokeWidth={1.5} />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-background mb-2">{item.title}</h3>
