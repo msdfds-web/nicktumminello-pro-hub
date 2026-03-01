@@ -17,8 +17,8 @@ const Index = () => {
       <Hero />
       <Accolades />
       <About />
-      <SocialProof />
       <Philosophy />
+      <SocialProof />
       <Services />
       <Publications />
       <NTLoop />
