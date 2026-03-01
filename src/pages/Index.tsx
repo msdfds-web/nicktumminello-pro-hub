@@ -4,6 +4,7 @@ import Accolades from "@/components/Accolades";
 import SocialProof from "@/components/SocialProof";
 import About from "@/components/About";
 import Philosophy from "@/components/Philosophy";
+import Courses from "@/components/Courses";
 import Services from "@/components/Services";
 import Publications from "@/components/Publications";
 import NTLoop from "@/components/NTLoop";
@@ -18,6 +19,7 @@ const Index = () => {
       <Accolades />
       <About />
       <Philosophy />
+      <Courses />
       <SocialProof />
       <Services />
       <Publications />
