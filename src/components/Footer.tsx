@@ -17,9 +17,11 @@ const Footer = () => {
           </nav>
 
           {/* Contact Info */}
-          <div className="flex flex-col md:flex-row gap-4 text-sm">
+          <div className="flex flex-col items-center md:items-end gap-2 text-sm">
             <a href="tel:5615011397" className="text-background/60 hover:text-primary transition-colors">561-501-1397</a>
             <a href="mailto:info@nicktumminello.com" className="text-background/60 hover:text-primary transition-colors">info@nicktumminello.com</a>
+            <p className="text-background/60">Located at Gravity + Oxygen Fitness</p>
+            <p className="text-background/40">199 W Palmetto Park Rd. Boca Raton, FL 33432</p>
           </div>
         </div>
 
