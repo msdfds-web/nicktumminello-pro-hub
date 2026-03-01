@@ -6,17 +6,17 @@ const Philosophy = () => {
   {
     number: "01",
     title: "Joint-Friendly Exercises",
-    description: "Every exercise and program is backed by scientific research, not fitness trends or fads."
+    description: "I specialize in building strength around aches, past injuries, and sensitive joints—so you can get fitter without flaring things up."
   },
   {
     number: "02",
     title: "Barbell-Free Workouts",
-    description: "Training should make you feel better, not break you down. Smart exercise selection protects your body."
+    description: "I prioritize smart alternatives to traditional barbell lifts to help you get strong without excessive joint stress."
   },
   {
     number: "03",
     title: "Science-Based Training",
-    description: "No cookie-cutter programs. Every client gets training tailored to their goals, limitations, and lifestyle."
+    description: "Every exercise and program is backed by scientific research, not fitness trends or fads."
   },
   {
     number: "04",
