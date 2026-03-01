@@ -24,13 +24,13 @@ const Contact = () => {
       <div className="container-tight relative z-10">
         <div className="max-w-2xl mx-auto text-center animate-fade-in">
           {/* Header */}
-          <span className="text-primary-foreground/80 font-semibold text-sm tracking-wider uppercase">Get Started</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-primary-foreground mt-3 mb-6 tracking-wide">
-            READY TO TRAIN?
+          <span className="text-primary-foreground/80 font-semibold text-sm tracking-wider uppercase">WANT TO TRAIN WITH ONE OF THE WORLD’S BEST PERSONAL TRAINERS?</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-primary-foreground mt-3 mb-6 tracking-wide">BECOME A CLIENT
+
           </h2>
-          <p className="text-primary-foreground/80 mb-10 text-lg">
-            Take the first step toward smarter, more effective training. Limited spots available 
-            for personal training in Boca Raton.
+          <p className="text-primary-foreground/80 mb-10 text-lg">If you’re an active adult that’s been working out semi-regularly and wants to get
+stronger safely and keep performing the sports and activities you love to your
+best potential, then you’re the perfect fit.
           </p>
 
           {/* Contact Info */}
@@ -53,8 +53,8 @@ const Contact = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground"
-            />
+              className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground" />
+
             <div className="grid grid-cols-2 gap-4">
               <Input
                 type="email"
@@ -62,23 +62,23 @@ const Contact = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground"
-              />
+                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground" />
+
               <Input
                 type="tel"
                 placeholder="Phone Number"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground"
-              />
+                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground" />
+
             </div>
             <Textarea
               placeholder="Tell us about your fitness goals..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               rows={4}
-              className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground resize-none"
-            />
+              className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground resize-none" />
+
             <Button variant="dark" size="xl" type="submit" className="w-full">
               Get in Touch
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -86,8 +86,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Contact;
