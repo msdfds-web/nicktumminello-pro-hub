@@ -16,12 +16,12 @@ const Philosophy = () => {
   {
     number: "03",
     title: "Science-Based Training",
-    description: "Every exercise and program is backed by scientific research, not fitness trends or fads."
+    description: "Every program is guided by proven principles and research—not trends or fads."
   },
   {
     number: "04",
     title: "Strength for Life",
-    description: "Build strength and fitness that lasts for years, not just weeks. Long-term progress over quick fixes."
+    description: "We train to improve how you move, feel, and function—so you stay active, capable, and confident for years to come."
   }];
 
 
