@@ -51,10 +51,10 @@ Joint-Friendly Strength Training and Golf Fitness
               <p className="text-muted-foreground text-sm font-semibold tracking-wider uppercase mb-5">Featured In</p>
               <div className="flex flex-wrap items-center gap-6 md:gap-8">
                 {[
-                  { src: bodybuildingLogo, alt: "Bodybuilding.com", className: "h-8 md:h-10" },
-                  { src: nyTimesLogo, alt: "NY Times", className: "h-10 md:h-14" },
-                  { src: golfDigestLogo, alt: "Golf Digest", className: "h-10 md:h-14" },
-                  { src: yahooSportsLogo, alt: "Yahoo Sports", className: "h-8 md:h-10" },
+                  { src: bodybuildingLogo, alt: "Bodybuilding.com", className: "h-12 md:h-16" },
+                  { src: nyTimesLogo, alt: "NY Times", className: "h-14 md:h-20" },
+                  { src: golfDigestLogo, alt: "Golf Digest", className: "h-14 md:h-20" },
+                  { src: yahooSportsLogo, alt: "Yahoo Sports", className: "h-12 md:h-16" },
                 ].map((item, i) => (
                   <div key={i} className={`${item.className} grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300`}>
                     <img src={item.src} alt={item.alt} className="h-full w-auto object-contain" />
