@@ -51,7 +51,7 @@ const CoursesPage = () => {
         "Complete power training exercise library",
       ],
       price: "$77",
-      link: "http://pillarsofpowertraining.com/",
+      link: "https://pillarsofpowertraining.com/",
     },
   ];
 
