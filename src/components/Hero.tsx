@@ -36,38 +36,15 @@ const Hero = () => {
 Joint-Friendly Strength Training and Golf Fitness
             </p>
 
-            {/* Lead Capture Form */}
-            <form onSubmit={handleSubmit} className="space-y-3 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <Input
-                type="text"
-                placeholder="Your Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-                className="bg-background border-border" />
-
-              <div className="grid grid-cols-2 gap-3">
-                <Input
-                  type="email"
-                  placeholder="Email Address"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  className="bg-background border-border" />
-
-                <Input
-                  type="tel"
-                  placeholder="Phone Number"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  className="bg-background border-border" />
-
-              </div>
-              <Button variant="default" size="xl" type="submit" className="w-full">
-                Start Training Today
-                <ArrowRight className="ml-2 h-5 w-5" />
+            {/* CTA Button */}
+            <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <Button variant="default" size="xl" asChild className="w-full md:w-auto px-12">
+                <a href="#contact">
+                  Become a Client
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
-            </form>
+            </div>
 
             {/* Featured In Logos */}
             <div className="mt-12 pt-8 border-t border-border animate-fade-in" style={{ animationDelay: '0.5s' }}>
