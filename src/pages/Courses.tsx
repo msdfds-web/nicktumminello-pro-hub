@@ -23,7 +23,7 @@ const CoursesPage = () => {
         "Assess on the fly in 1-on-1 or group settings",
       ],
       price: "$297",
-      link: "http://getmpacertified.com",
+      link: "https://getmpacertified.com/",
     },
     {
       title: "Tumminello Training Templates and Programs (T3P)",
