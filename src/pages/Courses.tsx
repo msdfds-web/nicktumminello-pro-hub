@@ -1,6 +1,5 @@
-import { GraduationCap, ArrowRight, CheckCircle } from "lucide-react";
+import { GraduationCap, ArrowRight, CheckCircle, ArrowLeft, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const CoursesPage = () => {
