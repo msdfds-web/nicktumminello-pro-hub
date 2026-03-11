@@ -23,7 +23,7 @@ const Contact = () => {
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n1. Main reason for training:\n${reason}\n\n2. How often looking to train:\n${frequency}\n\n3. Preferred days/time frames:\n${availability}\n\n4. Pain or injuries:\n${injuries}\n\n5. Current workouts/sports:\n${currentWorkouts}`
     );
-    window.location.href = `mailto:info@nicktumminello.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:NickTumminello@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (

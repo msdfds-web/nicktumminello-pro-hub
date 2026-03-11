@@ -1,7 +1,5 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { ArrowRight, ArrowUp } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import nickImage from "@/assets/nick-tumminello.jpeg";
 import bodybuildingLogo from "@/assets/bodybuilding-com-logo.png";
 import nyTimesLogo from "@/assets/ny-times-logo.png";
@@ -9,16 +7,6 @@ import golfDigestLogo from "@/assets/golf-digest-logo.png";
 import yahooSportsLogo from "@/assets/yahoo-sports-logo.png";
 
 const Hero = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const subject = encodeURIComponent("Training Inquiry");
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}`);
-    window.location.href = `mailto:info@nicktumminello.com?subject=${subject}&body=${body}`;
-  };
 
   return (
     <section className="relative flex items-center bg-background pt-44 pb-16 overflow-hidden">
@@ -48,48 +36,25 @@ const Hero = () => {
 Joint-Friendly Strength Training and Golf Fitness
             </p>
 
-            {/* Lead Capture Form */}
-            <form onSubmit={handleSubmit} className="space-y-3 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <Input
-                type="text"
-                placeholder="Your Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-                className="bg-background border-border" />
-
-              <div className="grid grid-cols-2 gap-3">
-                <Input
-                  type="email"
-                  placeholder="Email Address"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  className="bg-background border-border" />
-
-                <Input
-                  type="tel"
-                  placeholder="Phone Number"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  className="bg-background border-border" />
-
-              </div>
-              <Button variant="default" size="xl" type="submit" className="w-full">
-                Start Training Today
-                <ArrowRight className="ml-2 h-5 w-5" />
+            {/* CTA Button */}
+            <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <Button variant="default" size="xl" asChild className="w-full md:w-auto px-12">
+                <a href="#contact">
+                  Become a Client
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
-            </form>
+            </div>
 
             {/* Featured In Logos */}
             <div className="mt-12 pt-8 border-t border-border animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <p className="text-muted-foreground text-sm font-semibold tracking-wider uppercase mb-5">Featured In</p>
               <div className="flex flex-wrap items-center gap-6 md:gap-8">
                 {[
-                  { src: bodybuildingLogo, alt: "Bodybuilding.com", className: "h-8 md:h-10" },
-                  { src: nyTimesLogo, alt: "NY Times", className: "h-10 md:h-14" },
-                  { src: golfDigestLogo, alt: "Golf Digest", className: "h-10 md:h-14" },
-                  { src: yahooSportsLogo, alt: "Yahoo Sports", className: "h-8 md:h-10" },
+                  { src: bodybuildingLogo, alt: "Bodybuilding.com", className: "h-12 md:h-16" },
+                  { src: nyTimesLogo, alt: "NY Times", className: "h-14 md:h-20" },
+                  { src: golfDigestLogo, alt: "Golf Digest", className: "h-14 md:h-20" },
+                  { src: yahooSportsLogo, alt: "Yahoo Sports", className: "h-12 md:h-16" },
                 ].map((item, i) => (
                   <div key={i} className={`${item.className} grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300`}>
                     <img src={item.src} alt={item.alt} className="h-full w-auto object-contain" />
