@@ -43,23 +43,6 @@ const Services = () => {
           </p>
         </div>
 
-        {/* Featured In */}
-        <div className="mb-14 animate-fade-in">
-          <p className="text-center text-muted-foreground text-sm font-semibold tracking-wider uppercase mb-6">Featured In</p>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            {[
-              { src: bodybuildingLogo, alt: "Bodybuilding.com", className: "h-10 md:h-12" },
-              { src: nyTimesLogo, alt: "NY Times", className: "h-14 md:h-16" },
-              { src: golfDigestLogo, alt: "Golf Digest", className: "h-14 md:h-16" },
-              { src: yahooSportsLogo, alt: "Yahoo Sports", className: "h-10 md:h-12" },
-            ].map((item, i) => (
-              <div key={i} className={`${item.className} grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300`}>
-                <img src={item.src} alt={item.alt} className="h-full w-auto object-contain" />
-              </div>
-            ))}
-            <span className="text-muted-foreground font-display text-lg tracking-wide">& more</span>
-          </div>
-        </div>
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 gap-6">
