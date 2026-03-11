@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowRight, ArrowUp } from "lucide-react";
 import nickImage from "@/assets/nick-tumminello.jpeg";
+import bodybuildingLogo from "@/assets/bodybuilding-com-logo.png";
+import nyTimesLogo from "@/assets/ny-times-logo.png";
+import golfDigestLogo from "@/assets/golf-digest-logo.png";
+import yahooSportsLogo from "@/assets/yahoo-sports-logo.png";
 
 const Hero = () => {
   const [name, setName] = useState("");
