@@ -7,13 +7,13 @@ import nickChestPress from "@/assets/nick-chest-press.jpg";
 
 const About = () => {
   const highlights = [
-    "Specializes in joint-friendly strength training methods",
-    "Expert in golf fitness",
-    "Written Four Books",
-    "Taught at Fitness Conferences in 20+ Countries",
-    "Featured in 100+ major websites and magazines",
-    "Winner of the NSCA Personal Trainer of the Year Award",
-  ];
+  "Specializes in joint-friendly strength training methods",
+  "Expert in golf fitness",
+  "Written Four Books",
+  "Taught at Fitness Conferences in 20+ Countries",
+  "Featured in 100+ major websites and magazines",
+  "Winner of the NSCA Personal Trainer of the Year Award"];
+
 
   return (
     <section id="about" className="section-padding bg-brand-light">
@@ -25,25 +25,25 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-display text-foreground mt-3 mb-6 tracking-wide">
               NICK TUMMINELLO
             </h2>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
-              Voted one of America's Top Trainers by Men's Health, Nick Tumminello is the owner of 
-              Performance University International and has spent over two decades helping everyone 
-              from NFL and NBA athletes to golf and tennis enthusiasts achieve their fitness goals.
+            <p className="mb-6 leading-relaxed text-xs text-muted-foreground">Voted one of America's Top Trainers by Men's Health, Nick Tumminello has spent over two decades helping everyone from NFL and NBA athletes to golf and tennis enthusiasts to feel and perform their best.
+
+
+
             </p>
-            <p className="text-muted-foreground mb-8 leading-relaxed">
-              Based in Boca Raton, Nick's joint-friendly strength training methods are 
-              designed for active adults who want to stay strong, mobile, and injury-free. His 
-              evidence-based approach has made him a trusted resource for both clients and fellow 
-              fitness professionals worldwide.
+            <p className="text-muted-foreground mb-8 leading-relaxed text-sm">Based in Boca Raton, Nick's joint-friendly strength training methods are designed for active adults who want to stay strong, mobile, and injury-free. His evidence-based approach has made him a trusted resource for both clients and fellow fitness professionals worldwide.
+
+
+
+
             </p>
 
             <ul className="space-y-3">
-              {highlights.map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
+              {highlights.map((item, index) =>
+              <li key={index} className="flex items-start gap-3">
                   <span className="text-primary font-bold text-lg leading-5 mt-0.5">●</span>
                   <span className="text-foreground">{item}</span>
                 </li>
-              ))}
+              )}
             </ul>
 
             <div className="mt-8">
@@ -59,42 +59,42 @@ const About = () => {
           {/* Images Side - Right */}
           <div className="animate-fade-in flex flex-col gap-5" style={{ animationDelay: '0.2s' }}>
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img 
-                src={nickSeminar} 
-                alt="Nick Tumminello teaching at a fitness seminar" 
-                className="w-full object-contain"
-              />
+              <img
+                src={nickSeminar}
+                alt="Nick Tumminello teaching at a fitness seminar"
+                className="w-full object-contain" />
+              
             </div>
             <div className="grid grid-cols-2 gap-5">
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img 
-                  src={nickBooks} 
-                  alt="Nick Tumminello with his published books" 
-                  className="w-full h-full object-cover"
-                />
+                <img
+                  src={nickBooks}
+                  alt="Nick Tumminello with his published books"
+                  className="w-full h-full object-cover" />
+                
               </div>
               <div className="flex flex-col gap-5">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
-                  <img 
-                    src={nickTraining} 
-                    alt="Nick Tumminello training a client" 
-                    className="w-full object-contain"
-                  />
+                  <img
+                    src={nickTraining}
+                    alt="Nick Tumminello training a client"
+                    className="w-full object-contain" />
+                  
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg">
-                  <img 
-                    src={nickChestPress} 
-                    alt="Nick Tumminello spotting incline chest press" 
-                    className="w-full object-contain"
-                  />
+                  <img
+                    src={nickChestPress}
+                    alt="Nick Tumminello spotting incline chest press"
+                    className="w-full object-contain" />
+                  
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default About;
