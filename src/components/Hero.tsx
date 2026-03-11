@@ -1,7 +1,5 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { ArrowRight, ArrowUp } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import nickImage from "@/assets/nick-tumminello.jpeg";
 import bodybuildingLogo from "@/assets/bodybuilding-com-logo.png";
 import nyTimesLogo from "@/assets/ny-times-logo.png";
