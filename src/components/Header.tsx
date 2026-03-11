@@ -16,8 +16,8 @@ const Header = () => {
   const navLinks = [
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
-    { href: "#courses", label: "Courses" },
-    { href: "https://ntloop.com", label: "NT Loop", external: true },
+    { href: "/courses", label: "Courses" },
+    { href: "https://www.ntloop.com", label: "NT Loop", external: true },
     { href: "#contact", label: "Contact" },
   ];
 

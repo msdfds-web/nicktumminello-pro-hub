@@ -1,18 +1,31 @@
+import { Instagram, Facebook } from "lucide-react";
+
 const Footer = () => {
   return (
     <footer className="bg-foreground border-t border-background/10">
       <div className="container-tight py-12 px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo/Name */}
-          <p className="text-2xl font-display tracking-wider text-background">
-            NICK<span className="text-primary">T</span>
-          </p>
+          <div className="flex items-center gap-3">
+            <p className="text-2xl font-display tracking-wider">
+              <span className="text-primary">COACH</span>{" "}
+              <span className="text-background">NICK</span>
+            </p>
+            <div className="flex items-center gap-3 ml-4">
+              <a href="https://www.instagram.com/nick_tumminello/" target="_blank" rel="noopener noreferrer" className="text-background/60 hover:text-primary transition-colors">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="https://www.facebook.com/nicktumminello/" target="_blank" rel="noopener noreferrer" className="text-background/60 hover:text-primary transition-colors">
+                <Facebook className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
 
           {/* Links */}
           <nav className="flex gap-8 text-sm">
             <a href="#about" className="text-background/60 hover:text-primary transition-colors">About</a>
             <a href="#services" className="text-background/60 hover:text-primary transition-colors">Services</a>
-            <a href="https://ntloop.com" target="_blank" rel="noopener noreferrer" className="text-background/60 hover:text-primary transition-colors">NT Loop</a>
+            <a href="https://www.ntloop.com" target="_blank" rel="noopener noreferrer" className="text-background/60 hover:text-primary transition-colors">NT Loop</a>
             <a href="#contact" className="text-background/60 hover:text-primary transition-colors">Contact</a>
           </nav>
 

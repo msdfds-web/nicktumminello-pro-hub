@@ -32,7 +32,7 @@ const Accolades = () => {
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
             Nick has trained Super Bowl Champion Steve Weatherford, pro golfers,
-            and elite athletes across the NFL, MLB, and beyond.
+            and elite athletes across the NFL, MLB, NBA, MMA, and beyond.
           </p>
         </div>
 
