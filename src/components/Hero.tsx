@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowRight, ArrowUp } from "lucide-react";
 import nickImage from "@/assets/nick-tumminello.jpeg";
+import bodybuildingLogo from "@/assets/bodybuilding-com-logo.png";
+import nyTimesLogo from "@/assets/ny-times-logo.png";
+import golfDigestLogo from "@/assets/golf-digest-logo.png";
+import yahooSportsLogo from "@/assets/yahoo-sports-logo.png";
 
 const Hero = () => {
   const [name, setName] = useState("");
@@ -77,19 +81,20 @@ Joint-Friendly Strength Training and Golf Fitness
               </Button>
             </form>
 
-            {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border animate-fade-in" style={{ animationDelay: '0.5s' }}>
-              <div>
-                <p className="text-4xl md:text-5xl font-display text-primary">20+</p>
-                <p className="text-sm text-muted-foreground mt-1">Years</p>
-              </div>
-              <div>
-                <p className="text-4xl md:text-5xl font-display text-primary">4+</p>
-                <p className="text-sm text-muted-foreground mt-1">Books</p>
-              </div>
-              <div>
-                <p className="text-4xl md:text-5xl font-display text-primary">50+</p>
-                <p className="text-sm text-muted-foreground mt-1">Publications</p>
+            {/* Featured In Logos */}
+            <div className="mt-12 pt-8 border-t border-border animate-fade-in" style={{ animationDelay: '0.5s' }}>
+              <p className="text-muted-foreground text-sm font-semibold tracking-wider uppercase mb-5">Featured In</p>
+              <div className="flex flex-wrap items-center gap-6 md:gap-8">
+                {[
+                  { src: bodybuildingLogo, alt: "Bodybuilding.com", className: "h-8 md:h-10" },
+                  { src: nyTimesLogo, alt: "NY Times", className: "h-10 md:h-14" },
+                  { src: golfDigestLogo, alt: "Golf Digest", className: "h-10 md:h-14" },
+                  { src: yahooSportsLogo, alt: "Yahoo Sports", className: "h-8 md:h-10" },
+                ].map((item, i) => (
+                  <div key={i} className={`${item.className} grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300`}>
+                    <img src={item.src} alt={item.alt} className="h-full w-auto object-contain" />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
