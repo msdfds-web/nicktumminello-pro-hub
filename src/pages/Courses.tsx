@@ -1,6 +1,5 @@
-import { GraduationCap, ArrowRight, CheckCircle } from "lucide-react";
+import { GraduationCap, ArrowRight, CheckCircle, ArrowLeft, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const CoursesPage = () => {
@@ -57,7 +56,32 @@ const CoursesPage = () => {
 
   return (
     <main className="overflow-hidden">
-      <Header />
+      {/* Minimal Courses Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-foreground border-b border-background/10">
+        <div className="container-tight">
+          <div className="flex items-center justify-between h-16 px-6">
+            <a
+              href="/"
+              className="flex items-center gap-2 text-sm font-medium text-background/70 hover:text-background transition-colors"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Back to Home
+            </a>
+
+            <a href="/" className="text-xl font-display tracking-wider text-background">
+              NICK <span className="text-primary">TUMMINELLO</span>
+            </a>
+
+            <a
+              href="tel:5615011397"
+              className="flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+            >
+              <Phone className="h-3.5 w-3.5" />
+              561-501-1397
+            </a>
+          </div>
+        </div>
+      </header>
       <section className="pt-32 pb-20 md:pb-28 bg-foreground min-h-screen">
         <div className="container-tight px-6 md:px-8">
           {/* Header */}
