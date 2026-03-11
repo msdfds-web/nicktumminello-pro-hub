@@ -7,16 +7,6 @@ import golfDigestLogo from "@/assets/golf-digest-logo.png";
 import yahooSportsLogo from "@/assets/yahoo-sports-logo.png";
 
 const Hero = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const subject = encodeURIComponent("Training Inquiry");
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}`);
-    window.location.href = `mailto:info@nicktumminello.com?subject=${subject}&body=${body}`;
-  };
 
   return (
     <section className="relative flex items-center bg-background pt-44 pb-16 overflow-hidden">
