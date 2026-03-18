@@ -45,10 +45,10 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group p-8 rounded-xl border-2 border-border hover:border-primary transition-all duration-300 hover:shadow-xl animate-fade-in bg-background"
+              className="group p-8 rounded-xl border-2 border-primary shadow-xl transition-all duration-300 animate-fade-in bg-background"
               style={{ animationDelay: `${0.1 * index}s` }}
             >
-              <div className="w-16 h-16 rounded-xl bg-foreground flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+              <div className="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mb-6">
                 <service.icon className="h-8 w-8 text-background" />
               </div>
               <h3 className="text-2xl font-display tracking-wide text-foreground mb-3">{service.title}</h3>
