@@ -52,11 +52,11 @@ const About = () => {
                       {item.subItems.map((sub, subIndex) => (
                         <li key={subIndex} className="flex items-start gap-2">
                           <span className="text-primary text-sm leading-5 mt-0.5">○</span>
-                          <a
+                         <a
                             href={sub.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-foreground hover:text-primary transition-colors underline underline-offset-2"
+                            className="text-foreground hover:text-primary transition-colors underline underline-offset-2 italic"
                           >
                             {sub.title}
                           </a>
