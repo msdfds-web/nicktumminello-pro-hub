@@ -47,12 +47,31 @@ const About = () => {
             </p>
 
             <ul className="space-y-3">
-              {highlights.map((item, index) =>
-              <li key={index} className="flex items-start gap-3">
-                  <span className="text-primary font-bold text-lg leading-5 mt-0.5">●</span>
-                  <span className="text-foreground">{item}</span>
+              {highlights.map((item, index) => (
+                <li key={index}>
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary font-bold text-lg leading-5 mt-0.5">●</span>
+                    <span className="text-foreground">{item.text}</span>
+                  </div>
+                  {item.subItems && (
+                    <ul className="ml-8 mt-2 space-y-1.5">
+                      {item.subItems.map((sub, subIndex) => (
+                        <li key={subIndex} className="flex items-start gap-2">
+                          <span className="text-primary text-sm leading-5 mt-0.5">○</span>
+                          <a
+                            href={sub.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-foreground hover:text-primary transition-colors underline underline-offset-2"
+                          >
+                            {sub.title}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
-              )}
+              ))}
             </ul>
 
             <div className="mt-8">
