@@ -49,12 +49,12 @@ Joint-Friendly Strength Training and Golf Fitness
             {/* Featured In Logos */}
             <div className="mt-12 pt-8 border-t border-border animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <p className="text-muted-foreground text-sm font-semibold tracking-wider uppercase mb-5">Featured In</p>
-              <div className="flex flex-wrap items-center gap-6 md:gap-8">
+              <div className="flex flex-wrap items-center gap-4 md:gap-6">
                 {[
-                  { src: bodybuildingLogo, alt: "Bodybuilding.com", className: "h-12 md:h-16" },
-                  { src: nyTimesLogo, alt: "NY Times", className: "h-14 md:h-20" },
-                  { src: golfDigestLogo, alt: "Golf Digest", className: "h-14 md:h-20" },
-                  { src: yahooSportsLogo, alt: "Yahoo Sports", className: "h-12 md:h-16" },
+                  { src: bodybuildingLogo, alt: "Bodybuilding.com", className: "h-10 md:h-14" },
+                  { src: nyTimesLogo, alt: "NY Times", className: "h-12 md:h-16" },
+                  { src: golfDigestLogo, alt: "Golf Digest", className: "h-12 md:h-16" },
+                  { src: yahooSportsLogo, alt: "Yahoo Sports", className: "h-10 md:h-14" },
                 ].map((item, i) => (
                   <div key={i} className={`${item.className}`}>
                     <img src={item.src} alt={item.alt} className="h-full w-auto object-contain" />
