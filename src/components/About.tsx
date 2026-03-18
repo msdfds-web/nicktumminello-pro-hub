@@ -56,7 +56,7 @@ const About = () => {
                             href={sub.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-foreground hover:text-primary transition-colors underline underline-offset-2"
+                            className="text-foreground hover:text-primary transition-colors underline underline-offset-2 italic"
                           >
                             {sub.title}
                           </a>
