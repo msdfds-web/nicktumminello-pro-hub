@@ -49,7 +49,7 @@ Joint-Friendly Strength Training and Golf Fitness
             {/* Featured In Logos */}
             <div className="mt-12 pt-8 border-t border-border animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <p className="text-muted-foreground text-sm font-semibold tracking-wider uppercase mb-5">Featured In</p>
-              <div className="flex flex-wrap items-center gap-6 md:gap-8">
+              <div className="flex flex-wrap items-center gap-4 md:gap-6">
                 {[
                   { src: bodybuildingLogo, alt: "Bodybuilding.com", className: "h-12 md:h-16" },
                   { src: nyTimesLogo, alt: "NY Times", className: "h-14 md:h-20" },
