@@ -7,12 +7,21 @@ import nickChestPress from "@/assets/nick-chest-press.jpg";
 
 const About = () => {
   const highlights = [
-  "Specializes in joint-friendly strength training methods",
-  "Expert in golf fitness",
-  "Written Four Books",
-  "Taught at Fitness Conferences in 20+ Countries",
-  "Featured in 100+ major websites and magazines",
-  "Winner of the NSCA Personal Trainer of the Year Award"];
+    { text: "Specializes in joint-friendly strength training methods" },
+    { text: "Expert in golf fitness" },
+    { 
+      text: "Written Four Books",
+      subItems: [
+        { title: "Strength Training for Fat Loss", url: "https://www.amazon.com/Strength-Training-Fat-Loss-Nick/dp/1492526258" },
+        { title: "Strength Zone Training", url: "https://www.amazon.com/Strength-Zone-Training-Nick-Tumminello/dp/1718207247" },
+        { title: "Your Workout Perfected", url: "https://www.amazon.com/Your-Workout-PERFECTED-Nick-Tumminello/dp/1492558745" },
+        { title: "Building Muscle & Performance", url: "https://www.amazon.com/Building-Muscle-Performance-Nick-Tumminello/dp/1492512710" },
+      ]
+    },
+    { text: "Taught at Fitness Conferences in 20+ Countries" },
+    { text: "Featured in 100+ major websites and magazines" },
+    { text: "Winner of the NSCA Personal Trainer of the Year Award" },
+  ];
 
 
   return (
