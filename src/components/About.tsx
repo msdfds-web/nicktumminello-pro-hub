@@ -12,10 +12,10 @@ const About = () => {
     { 
       text: "Written Four Books",
       subItems: [
-        { title: "Strength Training for Fat Loss", url: "https://www.amazon.com/Strength-Training-Fat-Loss-Nick/dp/1492526258" },
-        { title: "Strength Zone Training", url: "https://www.amazon.com/Strength-Zone-Training-Nick-Tumminello/dp/1718207247" },
-        { title: "Your Workout Perfected", url: "https://www.amazon.com/Your-Workout-PERFECTED-Nick-Tumminello/dp/1492558745" },
-        { title: "Building Muscle & Performance", url: "https://www.amazon.com/Building-Muscle-Performance-Nick-Tumminello/dp/1492512710" },
+        { title: "Strength Training for Fat Loss", url: "https://www.amazon.com/Strength-Training-Loss-Nick-Tumminello/dp/1718218486/ref=sr_1_1?crid=2FBT4MOALC2XR&dib=eyJ2IjoiMSJ9.5C96fIJtzrxGny9ojXMh_JCwPFRFgCO89-8tCuRkZqCp-Wwb4SqQT0T2gPIBd-vR0kObHtm7uuLmrFnD-DZn7pAysKD4BQSaMMbnLvF0r-h1HvP9o6k-1k8yOKcRuI2HtQVz_sAcbFEUKJo9_4k-dqWX-3HLua2LSVxhn1Y3eqvK8JO8wWJAGA9DjbcXH8vEl-eNWjOZUJsh7cbJDVc04VWqAPLCxpK7VFQyVcrFjqY.e25cR2nYxqqDfdJR0Byh6ZmacKxBwwqD6dTWzEZM6Rg&dib_tag=se&keywords=nick+tumminello&qid=1773418601&sprefix=nick+tumminello%2Caps%2C194&sr=8-1" },
+        { title: "Strength Zone Training", url: "https://www.amazon.com/Strength-Zone-Training-Nick-Tumminello/dp/1718211473/ref=sr_1_2?crid=2FBT4MOALC2XR&dib=eyJ2IjoiMSJ9.5C96fIJtzrxGny9ojXMh_JCwPFRFgCO89-8tCuRkZqCp-Wwb4SqQT0T2gPIBd-vR0kObHtm7uuLmrFnD-DZn7pAysKD4BQSaMMbnLvF0r-h1HvP9o6k-1k8yOKcRuI2HtQVz_sAcbFEUKJo9_4k-dqWX-3HLua2LSVxhn1Y3eqvK8JO8wWJAGA9DjbcXH8vEl-eNWjOZUJsh7cbJDVc04VWqAPLCxpK7VFQyVcrFjqY.e25cR2nYxqqDfdJR0Byh6ZmacKxBwwqD6dTWzEZM6Rg&dib_tag=se&keywords=nick+tumminello&qid=1773418601&sprefix=nick+tumminello%2Caps%2C194&sr=8-2" },
+        { title: "Your Workout Perfected", url: "https://www.amazon.com/Your-Workout-PERFECTED-Nick-Tumminello-ebook/dp/B07CV2KHNZ/ref=sr_1_5?crid=2FBT4MOALC2XR&dib=eyJ2IjoiMSJ9.5C96fIJtzrxGny9ojXMh_JCwPFRFgCO89-8tCuRkZqCp-Wwb4SqQT0T2gPIBd-vR0kObHtm7uuLmrFnD-DZn7pAysKD4BQSaMMbnLvF0r-h1HvP9o6k-1k8yOKcRuI2HtQVz_sAcbFEUKJo9_4k-dqWX-3HLua2LSVxhn1Y3eqvK8JO8wWJAGA9DjbcXH8vEl-eNWjOZUJsh7cbJDVc04VWqAPLCxpK7VFQyVcrFjqY.e25cR2nYxqqDfdJR0Byh6ZmacKxBwwqD6dTWzEZM6Rg&dib_tag=se&keywords=nick+tumminello&qid=1773418601&sprefix=nick+tumminello%2Caps%2C194&sr=8-5" },
+        { title: "Building Muscle & Performance", url: "https://www.amazon.com/Building-Muscle-Performance-Program-Strength/dp/1492512702/ref=sr_1_4?crid=2FBT4MOALC2XR&dib=eyJ2IjoiMSJ9.5C96fIJtzrxGny9ojXMh_JCwPFRFgCO89-8tCuRkZqCp-Wwb4SqQT0T2gPIBd-vR0kObHtm7uuLmrFnD-DZn7pAysKD4BQSaMMbnLvF0r-h1HvP9o6k-1k8yOKcRuI2HtQVz_sAcbFEUKJo9_4k-dqWX-3HLua2LSVxhn1Y3eqvK8JO8wWJAGA9DjbcXH8vEl-eNWjOZUJsh7cbJDVc04VWqAPLCxpK7VFQyVcrFjqY.e25cR2nYxqqDfdJR0Byh6ZmacKxBwwqD6dTWzEZM6Rg&dib_tag=se&keywords=nick+tumminello&qid=1773418601&sprefix=nick+tumminello%2Caps%2C194&sr=8-4" },
       ]
     },
     { text: "Taught at Fitness Conferences in 20+ Countries" },
