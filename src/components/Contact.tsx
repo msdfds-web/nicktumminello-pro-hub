@@ -33,10 +33,7 @@ const Contact = () => {
         <div className="max-w-2xl mx-auto text-center animate-fade-in">
           <span className="text-primary-foreground/80 font-semibold text-sm tracking-wider uppercase">WANT TO TRAIN WITH ONE OF THE WORLD'S BEST PERSONAL TRAINERS?</span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-primary-foreground mt-3 mb-6 tracking-wide">BECOME A CLIENT</h2>
-          <p className="text-primary-foreground/80 mb-10 text-lg">If you're an active adult that's been working out semi-regularly and wants to get
-stronger safely and keep performing the sports and activities you love to your
-best potential, then you're the perfect fit.
-          </p>
+          <p className="text-primary-foreground/80 mb-10 text-lg">Whether you're already exercising, just getting started, or dealing with aches and pains that make workouts frustrating, I help active adults get stronger safely so they can keep doing the sports and activities they love at their best.</p>
 
           {/* Application Info Box */}
           <div className="mb-10 p-6 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20 text-left space-y-3">
