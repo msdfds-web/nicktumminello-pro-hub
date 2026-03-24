@@ -101,10 +101,10 @@ const About = () => {
                       className="w-full object-contain" />
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg">
-                  <img
-                    src={nickChestPress}
-                    alt="Nick Tumminello spotting incline chest press"
-                    className="w-full object-contain" />
+                    <img
+                      src={nickChestPress}
+                      alt="Nick Tumminello demonstrating strength training for adults over 50 with incline chest press"
+                      className="w-full object-contain" />
                 </div>
               </div>
             </div>

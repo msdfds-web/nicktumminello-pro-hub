@@ -6,22 +6,22 @@ const Services = () => {
     {
       icon: Dumbbell,
       title: "JOINT-FRIENDLY STRENGTH TRAINING",
-      description: "Build functional strength with methods designed to protect your joints while maximizing results.",
+      description: "Build functional strength with methods designed to protect your joints while maximizing results. Ideal for adults over 50 and active agers.",
     },
     {
       icon: Target,
-      title: "GOLF & TENNIS",
+      title: "GOLF & TENNIS FITNESS",
       description: "Sport-specific training to improve your power, rotation, and endurance on the course or court.",
     },
     {
       icon: Heart,
-      title: "ACTIVE AGING",
-      description: "Stay strong, mobile, and independent with training designed for the unique needs of active adults.",
+      title: "STRENGTH TRAINING FOR FAT LOSS",
+      description: "Evidence-based strength training programs designed for sustainable fat loss without extreme diets or grueling cardio.",
     },
     {
       icon: Users,
-      title: "1-ON-1 COACHING",
-      description: "Personalized attention and programming tailored to your goals, schedule, and fitness level.",
+      title: "1-ON-1 PERSONAL TRAINING",
+      description: "Personalized attention and programming tailored to your goals, schedule, and fitness level at our Boca Raton studio.",
     },
   ];
 

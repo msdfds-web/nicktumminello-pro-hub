@@ -78,7 +78,7 @@ const Accolades = () => {
               <iframe
                 className="absolute inset-0 w-full h-full"
                 src="https://www.youtube.com/embed/o3dCzUT0oIY?list=PL8VhzNx21yXlUdZMeg738MMAcpfSEG4r0"
-                title="Coach Nick training the NFL's Fittest Man"
+                title="Coach Nick Tumminello training NFL's Fittest Man Steve Weatherford - personal trainer in Boca Raton"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />

@@ -6,7 +6,7 @@ const Philosophy = () => {
   {
     icon: ShieldCheck,
     title: "Joint-Friendly Exercises",
-    description: "I specialize in building strength around aches, past injuries, and sensitive joints—so you can get fitter without flaring things up."
+    description: "I specialize in building strength around aches, past injuries, and sensitive joints—ideal fitness programs for older adults at home or in the gym."
   },
   {
     icon: Dumbbell,
