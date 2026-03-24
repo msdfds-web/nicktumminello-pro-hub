@@ -81,10 +81,10 @@ const About = () => {
           {/* Images Side - Right */}
           <div className="animate-fade-in flex flex-col gap-5" style={{ animationDelay: '0.2s' }}>
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={nickSeminar}
-                alt="Nick Tumminello teaching at a fitness seminar"
-                className="w-full object-contain" />
+                <img
+                  src={nickSeminar}
+                  alt="Nick Tumminello teaching strength training for fat loss at a fitness seminar"
+                  className="w-full object-contain" />
             </div>
             <div className="grid grid-cols-2 gap-5">
               <div className="rounded-2xl overflow-hidden shadow-lg">
