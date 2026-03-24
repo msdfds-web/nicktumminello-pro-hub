@@ -20,7 +20,7 @@ const Hero = () => {
             {/* Credentials Badge */}
             <div className="inline-flex items-center gap-2 mb-6 animate-fade-in text-secondary-foreground" style={{ animationDelay: '0.1s' }}>
               <span className="h-px w-8 bg-secondary-foreground" />
-              <span className="font-semibold tracking-wider uppercase text-secondary-foreground text-lg">VOTED ONE OF AMERICA’S BEST TRAINERS BY MEN’S HEALTH
+              <span className="font-semibold tracking-wider uppercase text-secondary-foreground text-lg">VOTED ONE OF AMERICA'S BEST TRAINERS BY MEN'S HEALTH
 
               </span>
             </div>
@@ -32,8 +32,8 @@ const Hero = () => {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>Boca Raton’s Best Personal Trainer for
-Joint-Friendly Strength Training and Golf Fitness
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>
+              Personal Trainer in Boca Raton Specializing in Joint-Friendly Strength Training for Adults Over 50 &amp; Golf Fitness
             </p>
 
             {/* CTA Button */}
@@ -57,7 +57,7 @@ Joint-Friendly Strength Training and Golf Fitness
                   { src: yahooSportsLogo, alt: "Nick Tumminello featured on Yahoo Sports", className: "h-10 md:h-14" },
                 ].map((item, i) => (
                   <div key={i} className={`${item.className}`}>
-                    <img src={item.src} alt={item.alt} className="h-full w-auto object-contain" />
+                    <img src={item.src} alt={item.alt} className="h-full w-auto object-contain" loading="lazy" />
                   </div>
                 ))}
               </div>
