@@ -90,7 +90,7 @@ const About = () => {
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src={nickBooks}
-                  alt="Nick Tumminello with his published books"
+                  alt="Nick Tumminello's published books on strength training for fat loss and adults over 50"
                   className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col gap-5">
