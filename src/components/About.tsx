@@ -33,7 +33,7 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-display text-foreground mt-3 mb-6 tracking-wide">
               NICK TUMMINELLO
             </h2>
-            <p className="mb-6 leading-relaxed text-xs text-muted-foreground">
+            <p className="mb-6 leading-relaxed text-sm text-muted-foreground">
               Voted one of America's Top Trainers by Men's Health, Nick Tumminello has spent over two decades helping everyone from NFL and NBA athletes to active adults, golfers, and tennis enthusiasts feel and perform their best.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed text-sm">
