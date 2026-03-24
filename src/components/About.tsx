@@ -95,10 +95,10 @@ const About = () => {
               </div>
               <div className="flex flex-col gap-5">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
-                  <img
-                    src={nickTraining}
-                    alt="Nick Tumminello training a client"
-                    className="w-full object-contain" />
+                    <img
+                      src={nickTraining}
+                      alt="Personal trainer Nick Tumminello coaching a client with joint-friendly exercises in Boca Raton"
+                      className="w-full object-contain" />
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <img
