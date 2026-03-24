@@ -20,7 +20,7 @@ const Hero = () => {
             {/* Credentials Badge */}
             <div className="inline-flex items-center gap-2 mb-6 animate-fade-in text-secondary-foreground" style={{ animationDelay: '0.1s' }}>
               <span className="h-px w-8 bg-secondary-foreground" />
-              <span className="font-semibold tracking-wider uppercase text-secondary-foreground text-lg">VOTED ONE OF AMERICA’S BEST TRAINERS BY MEN’S HEALTH
+              <span className="font-semibold tracking-wider uppercase text-secondary-foreground text-lg">VOTED ONE OF AMERICA'S BEST TRAINERS BY MEN'S HEALTH
 
               </span>
             </div>
@@ -32,8 +32,8 @@ const Hero = () => {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>Boca Raton’s Best Personal Trainer for
-Joint-Friendly Strength Training and Golf Fitness
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>
+              Personal Trainer in Boca Raton Specializing in Joint-Friendly Strength Training for Adults Over 50 &amp; Golf Fitness
             </p>
 
             {/* CTA Button */}
@@ -51,13 +51,13 @@ Joint-Friendly Strength Training and Golf Fitness
               <p className="text-muted-foreground text-sm font-semibold tracking-wider uppercase mb-5">Featured In</p>
               <div className="flex flex-wrap items-center gap-4 md:gap-6">
                 {[
-                  { src: bodybuildingLogo, alt: "Bodybuilding.com", className: "h-10 md:h-14" },
-                  { src: nyTimesLogo, alt: "NY Times", className: "h-12 md:h-16" },
-                  { src: golfDigestLogo, alt: "Golf Digest", className: "h-12 md:h-16" },
-                  { src: yahooSportsLogo, alt: "Yahoo Sports", className: "h-10 md:h-14" },
+                  { src: bodybuildingLogo, alt: "Nick Tumminello featured on Bodybuilding.com for strength training expertise", className: "h-10 md:h-14" },
+                  { src: nyTimesLogo, alt: "Nick Tumminello featured in The New York Times", className: "h-12 md:h-16" },
+                  { src: golfDigestLogo, alt: "Nick Tumminello featured in Golf Digest for golf fitness training", className: "h-12 md:h-16" },
+                  { src: yahooSportsLogo, alt: "Nick Tumminello featured on Yahoo Sports", className: "h-10 md:h-14" },
                 ].map((item, i) => (
                   <div key={i} className={`${item.className}`}>
-                    <img src={item.src} alt={item.alt} className="h-full w-auto object-contain" />
+                    <img src={item.src} alt={item.alt} className="h-full w-auto object-contain" loading="lazy" />
                   </div>
                 ))}
               </div>
@@ -70,7 +70,7 @@ Joint-Friendly Strength Training and Golf Fitness
               {/* Main Image */}
               <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  alt="Nick Tumminello - Personal Trainer"
+                  alt="Nick Tumminello personal trainer in Boca Raton training NFL Super Bowl Champion Steve Weatherford"
                   className="w-full h-auto object-cover"
                   src="/lovable-uploads/23987974-c82d-4976-9642-5b0a1cdb59db.png"
                   fetchPriority="high"

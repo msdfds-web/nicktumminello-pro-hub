@@ -53,7 +53,7 @@ const Courses = () => {
             COURSES
           </h2>
           <p className="text-muted-foreground mt-4 text-lg max-w-2xl mx-auto">
-            Digital courses designed to level up your training knowledge and coaching skills.
+            Online fitness courses for personal trainers — level up your training knowledge and coaching skills.
           </p>
         </div>
 
