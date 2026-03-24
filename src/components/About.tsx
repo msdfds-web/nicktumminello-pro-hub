@@ -33,10 +33,10 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-display text-foreground mt-3 mb-6 tracking-wide">
               NICK TUMMINELLO
             </h2>
-            <p className="mb-6 leading-relaxed text-sm text-muted-foreground">
+            <p className="mb-6 leading-relaxed text-muted-foreground">
               Voted one of America's Top Trainers by Men's Health, Nick Tumminello has spent over two decades helping everyone from NFL and NBA athletes to active adults, golfers, and tennis enthusiasts feel and perform their best.
             </p>
-            <p className="text-muted-foreground mb-8 leading-relaxed text-sm">
+            <p className="text-muted-foreground mb-8 leading-relaxed">
               Based in Boca Raton, Nick's joint-friendly strength training methods are designed for people who want to get stronger, move better, and stay active without beating up their body—even if they've struggled with cranky knees, hips, backs, or shoulders. His evidence-based approach has made him a trusted resource for both clients and fellow fitness professionals worldwide.
             </p>
 
