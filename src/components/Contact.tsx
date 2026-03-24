@@ -2,10 +2,9 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, ArrowRight, CheckCircle } from "lucide-react";
+import { MapPin, ArrowRight, CheckCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-
-const FORMSPREE_ID = "xwpkgpbj";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -28,28 +27,25 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      const { data, error } = await supabase.functions.invoke('send-contact-form', {
+        body: {
           name,
           email,
           phone,
-          "1. Main reason for training": reason,
-          "2. How often looking to train": frequency,
-          "3. Preferred days/time frames": availability,
-          "4. Pain or injuries": injuries,
-          "5. Current workouts/sports": currentWorkouts,
-        }),
+          reason,
+          frequency,
+          availability,
+          injuries,
+          currentWorkouts,
+        },
       });
 
-      if (response.ok) {
-        setIsSubmitted(true);
-        toast({ title: "Application Submitted!", description: "We'll be in touch soon." });
-      } else {
-        throw new Error("Submission failed");
-      }
-    } catch {
+      if (error) throw error;
+
+      setIsSubmitted(true);
+      toast({ title: "Application Submitted!", description: "We'll be in touch soon." });
+    } catch (err) {
+      console.error('Form submission error:', err);
       toast({ title: "Error", description: "Something went wrong. Please try again.", variant: "destructive" });
     } finally {
       setIsSubmitting(false);
