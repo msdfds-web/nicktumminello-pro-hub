@@ -27,20 +27,39 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const { data, error } = await supabase.functions.invoke('send-contact-form', {
-        body: {
-          name,
-          email,
-          phone,
-          reason,
-          frequency,
-          availability,
-          injuries,
-          currentWorkouts,
-        },
+      const submissionId = crypto.randomUUID();
+      const { error: dbError } = await supabase.from('contact_submissions').insert({
+        id: submissionId,
+        name,
+        email,
+        phone: phone || null,
+        reason,
+        frequency,
+        availability,
+        injuries,
+        current_workouts: currentWorkouts,
       });
 
-      if (error) throw error;
+      if (dbError) throw dbError;
+
+      // Send notification email to Nick
+      await supabase.functions.invoke('send-transactional-email', {
+        body: {
+          templateName: 'contact-form-notification',
+          recipientEmail: 'nicktumminello@gmail.com',
+          idempotencyKey: `contact-notify-${submissionId}`,
+          templateData: {
+            name,
+            email,
+            phone,
+            reason,
+            frequency,
+            availability,
+            injuries,
+            currentWorkouts,
+          },
+        },
+      });
 
       setIsSubmitted(true);
       toast({ title: "Application Submitted!", description: "We'll be in touch soon." });
