@@ -53,8 +53,8 @@ const Accolades = () => {
                   <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
                     <img
                       src={t.avatar}
-                      alt={t.name}
-                      className="w-full h-full object-cover"
+                      alt={`${t.name} testimonial for personal trainer Nick Tumminello`}
+                      className="w-full h-full object-cover" loading="lazy"
                     />
                   </div>
                   <div>
