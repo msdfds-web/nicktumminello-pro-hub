@@ -2,7 +2,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, ArrowRight } from "lucide-react";
+import { Mail, MapPin, ArrowRight, CheckCircle } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+
+const FORMSPREE_ID = "xwpkgpbj";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -13,18 +16,60 @@ const Contact = () => {
   const [availability, setAvailability] = useState("");
   const [injuries, setInjuries] = useState("");
   const [currentWorkouts, setCurrentWorkouts] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const { toast } = useToast();
 
   const inputClass = "bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary-foreground";
   const textareaClass = `${inputClass} resize-none`;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent("Training Application");
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n1. Main reason for training:\n${reason}\n\n2. How often looking to train:\n${frequency}\n\n3. Preferred days/time frames:\n${availability}\n\n4. Pain or injuries:\n${injuries}\n\n5. Current workouts/sports:\n${currentWorkouts}`
-    );
-    window.location.href = `mailto:NickTumminello@gmail.com?subject=${subject}&body=${body}`;
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          "1. Main reason for training": reason,
+          "2. How often looking to train": frequency,
+          "3. Preferred days/time frames": availability,
+          "4. Pain or injuries": injuries,
+          "5. Current workouts/sports": currentWorkouts,
+        }),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        toast({ title: "Application Submitted!", description: "We'll be in touch soon." });
+      } else {
+        throw new Error("Submission failed");
+      }
+    } catch {
+      toast({ title: "Error", description: "Something went wrong. Please try again.", variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
+  if (isSubmitted) {
+    return (
+      <section id="contact" className="relative section-padding bg-primary">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-foreground pointer-events-none" />
+        <div className="container-tight relative z-10">
+          <div className="max-w-2xl mx-auto text-center animate-fade-in">
+            <CheckCircle className="h-16 w-16 text-primary-foreground mx-auto mb-6" />
+            <h2 className="text-4xl md:text-5xl font-display text-primary-foreground mb-6 tracking-wide">APPLICATION RECEIVED</h2>
+            <p className="text-primary-foreground/80 text-lg">Thank you for your interest! We'll review your application and get back to you soon.</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="contact" className="relative section-padding bg-primary">
@@ -98,9 +143,9 @@ const Contact = () => {
               <Textarea value={currentWorkouts} onChange={(e) => setCurrentWorkouts(e.target.value)} rows={3} required className={textareaClass} />
             </div>
 
-            <Button variant="dark" size="xl" type="submit" className="w-full">
-              Submit Application
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button variant="dark" size="xl" type="submit" className="w-full" disabled={isSubmitting}>
+              {isSubmitting ? "Submitting..." : "Submit Application"}
+              {!isSubmitting && <ArrowRight className="ml-2 h-5 w-5" />}
             </Button>
           </form>
         </div>
